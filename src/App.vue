@@ -3,6 +3,7 @@
     <v-app-bar
       app
       color="transparent"
+      elevation="0"
       >
       <div class="d-flex align-center">
         <v-img
