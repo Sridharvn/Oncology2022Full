@@ -1,40 +1,56 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <main>
-      lakdhjklaghsdjklhdkl;uheikuads awdasd awd;kdh;alsdj'l;oajrf'aiosfj'lai ulo;aishydlo;ih
-    </main>
-    <aside>
-      <img src="./../assets/317582_1100-732x549.jpg" alt="" style="height:90vh;width:55vw; ">
-      <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
-    </aside>
+    <home-main></home-main>
+    <v-row>
+      <div v-for="cards in cardData" v-bind:key="cards.text">
+        <v-col> <DetailsCards :cardData="cards"></DetailsCards></v-col>
+      </div>
+    </v-row>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import HomeMain from "../components/HomeMain.vue";
+import DetailsCards from "../components/DetailsCards.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    // HelloWorld
-  }
-}
+    HomeMain,
+    DetailsCards,
+  },
+  data() {
+    return {
+      //
+      cardData: [
+        {
+          Image: "./../assets/317582_1100-732x549.jpg",
+          Header: "Header1",
+          Details: "Details1",
+          Footer: "Footer1",
+          Text: "Text for testing",
+        },
+        {
+          Image: "./../assets/MSHS-Cancer-RadiationOncology-2col-685x375-3.jpg",
+          Header: "Header2",
+          Details: "Details2",
+          Footer: "Footer2",
+          Text: "Text for testing2",
+        },
+        {
+          Image: "",
+          Header: "",
+          Details: "",
+          Footer: "",
+          Text: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
-.home{
-display: flex;
-justify-content: space-between;
-}
-aside{
-  display: flex; 
-}
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.home {
+  margin-bottom: 10px;
 }
 </style>

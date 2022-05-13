@@ -2,9 +2,11 @@
   <v-app>
     <v-app-bar
       app
-      color="transparent"
-      elevation="0"
-      >
+      color="white"
+      elevation="10"
+      elevate-on-scroll
+      shrink-on-scroll
+    >
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -14,22 +16,20 @@
           transition="scale-transition"
           width="60"
         />
-        <h2>
-        Oncology 2022</h2>
+        <h2>Oncology 2022</h2>
       </div>
       <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
@@ -37,5 +37,4 @@ export default {
 };
 </script>
 <style>
-
 </style>
