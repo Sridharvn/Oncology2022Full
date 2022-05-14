@@ -7,12 +7,13 @@
 
     <v-card-subtitle> {{ cardData.Details }} </v-card-subtitle>
 
-    <v-card-actions>
+    <v-card-actions @click="show = !show">
       <v-btn color="orange lighten-2" text> More Details </v-btn>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon @click="show = !show">
+      <v-btn icon>
+        <!-- <v-btn icon @click="show = !show"> -->
         <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
       </v-btn>
     </v-card-actions>
