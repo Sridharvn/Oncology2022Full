@@ -1,6 +1,7 @@
 <template>
   <v-card class="mx-auto" max-width="344">
-    <v-img :src="cardData.Image" height="200px"></v-img>
+    <v-img :src="require(`@/assets/${cardData.Image}`)" height="200px"></v-img>
+    <!-- <v-img :src="require(`@/assets/${cardData.Image}`)" height="200px"></v-img> -->
 
     <v-card-title> {{ cardData.Header }} </v-card-title>
 
