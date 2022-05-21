@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
+  <v-card class="mx-auto" max-width="344" min-width="320">
     <v-img :src="require(`@/assets/${cardData.Image}`)" height="200px"></v-img>
     <!-- <v-img :src="require(`@/assets/${cardData.Image}`)" height="200px"></v-img> -->
 

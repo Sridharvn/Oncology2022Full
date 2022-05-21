@@ -3,16 +3,16 @@
     <main>
       <h1>Oncology 2022</h1>
       <h4>
-        International Conference on Multidisciplinary Management of Genito
-        Urinary, Gynaec & Pelvic Malignancies
+        International Conference on Multidisciplinary Management of Common
+        Malignancies
       </h4>
+      <h5>2022 October 14,15 and 16</h5>
+      <h5>Organised by : CCRS</h5>
+      <h5> VENUE : HOTEL CROWNE PLAZA, KOCHI</h5>
+      <h5> Email : oncology2022india@gmail.com www.oncology2022.in</h5>
     </main>
     <aside>
-      <img
-        src="./../assets/317582_1100-732x549.jpg"
-        alt=""
-        style="height: 90vh; width: 55vw"
-      />
+      <img src="./../assets/crowne-plaza-kochi-3941030496-2x1.jpg" alt="" style="height: 90vh; width: 55vw" />
       <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>
