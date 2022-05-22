@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <home-main></home-main>
-    <br /><br />
+    <!-- <br /><br /> -->
     <v-spacer></v-spacer>
     <v-row justify="center">
       <div v-for="cards in cardData" v-bind:key="cards.text">
@@ -29,11 +29,17 @@
 
     <v-row>
       <v-col>
+        <h3 style="text-align:center">
+          Places of interest in Kerala</h3>
+        <v-spacer></v-spacer>
         <Table :TableData="PlacesofInterestData" :Headers="PlacesofInterestHeaders"></Table>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
+        <h3 style="text-align:center">
+          Places in and around Cochin</h3>
+        <v-spacer></v-spacer>
         <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
       </v-col>
     </v-row>

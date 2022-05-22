@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar">
+    <v-app-bar app elevation="5" id="appbar">
+      <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
         <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition"
           width="60" />
@@ -28,7 +29,7 @@ export default {
 @import './styles/styleVariables.css';
 
 #appbar {
-  background-color: var(--primary-color);
+  background-color: var(--appBar-color);
   color: var(--secondary-color);
 }
 </style>
