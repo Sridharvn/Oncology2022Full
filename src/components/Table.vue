@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <v-data-table :headers="Headers" :items="TableData" class="elevation-1" hide-default-footer dense>
+    <div id="tables">
+        <v-data-table :headers="Headers" :items="TableData" class="elevation-1" hide-default-footer dense
+            mobile-breakpoint="0" id="tables">
         </v-data-table>
     </div>
 </template>
@@ -23,3 +24,13 @@ export default {
     },
 };
 </script>
+<style scoped>
+/* div {
+    background-color: var(--secondary-color);
+} */
+
+#tables {
+    /* background-color: var(--secondary-color); */
+    color: var(--secondary-color);
+}
+</style>

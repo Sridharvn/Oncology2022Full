@@ -1,21 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="white"
-      elevation="10"
-      elevate-on-scroll
-      shrink-on-scroll
-    >
+    <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar">
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="./assets/ccrs-logo.png"
-          transition="scale-transition"
-          width="60"
-        />
+        <v-img alt="Vuetify Logo" class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition"
+          width="60" />
         <h2>Oncology 2022</h2>
       </div>
       <v-spacer></v-spacer>
@@ -37,4 +25,10 @@ export default {
 };
 </script>
 <style>
+@import './styles/styleVariables.css';
+
+#appbar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
 </style>

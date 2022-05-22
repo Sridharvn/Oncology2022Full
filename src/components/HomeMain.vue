@@ -12,7 +12,8 @@
       <h5> Email : oncology2022india@gmail.com www.oncology2022.in</h5>
     </main>
     <aside>
-      <img src="./../assets/crowne-plaza-kochi-3941030496-2x1.jpg" alt="" style="height: 90vh; width: 55vw" />
+      <img src="./../assets/crowne-plaza-kochi-3941030496-2x1.jpg" alt=""
+        style="max-height: 90vh; max-width: 55vw; mix-blend-mode: overlay;" />
       <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>
@@ -35,5 +36,25 @@ main {
   align-items: center;
   text-align: center;
   flex-direction: column;
+}
+
+#home {
+  background-color: var(--primary-color);
+  color: var(--secondary-color)
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    flex-direction: column;
+  }
+
+  aside {
+    /* display: none; */
+    /* ?justify center */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
 }
 </style>
