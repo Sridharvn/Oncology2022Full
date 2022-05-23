@@ -1,16 +1,16 @@
 <template>
     <div>
-        <v-row>
+        <v-row dense>
             <v-col>
                 <h1>{{ DetailstextData.Header }}</h1>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row dense>
             <v-col>
                 <h4>{{ DetailstextData.wish }}</h4>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row dense>
             <v-col>
                 <p>
                     {{ DetailstextData.Details }}
@@ -24,7 +24,7 @@
                 </p>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row id="Thanks">
             <v-col> {{ DetailstextData.Thanks }}</v-col>
         </v-row>
         <v-spacer></v-spacer>

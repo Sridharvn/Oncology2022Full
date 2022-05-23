@@ -17,12 +17,38 @@
 </template>
 
 <script>
+import gsap from 'gsap'
+import ScrollTriggerPlugin from 'gsap/ScrollTrigger'
 export default {
   name: "App",
 
   data: () => ({
     //
   }),
+  mounted() {
+    //
+    this.revealAnimation();
+  },
+  methods: {
+    //
+    revealAnimation() {
+      gsap.registerPlugin(ScrollTriggerPlugin);
+      gsap.from('h1,h2,h3,h4,h5,#Thanks', {
+        duration: 1,
+        opacity: 0,
+        xPercent: -100,
+        ease: "power4",
+        stagger: 0.1
+      });
+      gsap.from('img,p,.footer1,#image,#tables', {
+        duration: 1,
+        opacity: 0,
+        xPercent: 100,
+        ease: "power4",
+        stagger: 0.1
+      });
+    }
+  }
 };
 </script>
 <style>
@@ -31,5 +57,15 @@ export default {
 #appbar {
   background-color: var(--appBar-color);
   color: var(--secondary-color);
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 </style>

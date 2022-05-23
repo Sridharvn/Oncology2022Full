@@ -1,6 +1,7 @@
 <template>
     <div id="tables">
-        <v-data-table :headers="Headers" :items="TableData" class="elevation-1" hide-default-footer dense
+        <br>
+        <v-data-table :headers="Headers" :items="TableData" class="elevation-5" hide-default-footer dense
             mobile-breakpoint="0" id="tables">
         </v-data-table>
     </div>

@@ -1,12 +1,12 @@
 <template>
   <div id="home">
     <main>
-      <h1>Oncology 2022</h1>
-      <h4>
+      <!-- <h1>Oncology 2022</h1> -->
+      <h2>
         International Conference on Multidisciplinary Management of Common
         Malignancies
-      </h4>
-      <h5>2022 October 14,15 and 16</h5>
+      </h2>
+      <h4 style="color:var(--text-color)">2022 October 14,15 and 16</h4>
       <h5>Organised by : CCRS</h5>
       <h5> VENUE : HOTEL CROWNE PLAZA, KOCHI</h5>
       <h5> Email : oncology2022india@gmail.com</h5>
@@ -14,8 +14,7 @@
       <br>
     </main>
     <aside>
-      <img src="./../assets/crowne-plaza-kochi-3941030496-2x1.jpg" alt=""
-        style="max-height: 90vh; max-width: 55vw; mix-blend-mode: overlay;" />
+      <img src="./../assets/crowne-plaza-kochi-Resized.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
       <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>
@@ -56,6 +55,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 20px;
     /* width: max-content; */
   }
 }
