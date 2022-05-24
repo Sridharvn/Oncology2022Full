@@ -33,21 +33,28 @@
         <br /><br />
         <h3 style="text-align: center">Places of interest in Kerala</h3>
         <v-spacer></v-spacer>
-        <Table :TableData="PlacesofInterestData" :Headers="PlacesofInterestHeaders"></Table>
+        <Table
+          :TableData="PlacesofInterestData"
+          :Headers="PlacesofInterestHeaders"
+        ></Table>
       </v-col>
     </v-row>
     <v-row>
-      <v-col><br /><br />
+      <v-col
+        ><br /><br />
         <h3 style="text-align: center">Places in and around Cochin</h3>
         <v-spacer></v-spacer>
-        <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
+        <Table
+          :TableData="PlacesinKochiData"
+          :Headers="PlacesinKochiHeaders"
+        ></Table>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col>
-        <WebsiteFooter></WebsiteFooter>
-      </v-col>
-    </v-row>
+    <br />
+    <br />
+    <br />
+    <br />
+    <WebsiteFooter :DownloadLinks="DownloadsLinks"></WebsiteFooter>
   </div>
 </template>
 
@@ -69,7 +76,15 @@ export default {
     // InstructionsForPreperation,
     Table,
     HotelsDetails,
-    WebsiteFooter
+    WebsiteFooter,
+  },
+  mounted() {
+    //
+  },
+  props: {
+    DownloadsLinks: {
+      type: Array,
+    },
   },
   data() {
     return {
@@ -207,36 +222,14 @@ export default {
       ],
     };
   },
-  // computed: {
-  //   PlacesofInterestHeaders() {
-  //     return [
-  //       {
-  //         text: 'Destination',
-  //         align: 'center',
-  //         sortable: false,
-  //         value: 'Destination',
-  //       },
-  //       {
-  //         text: 'Description',
-  //         align: 'center',
-  //         sortable: false,
-  //         value: 'Description',
-  //       },
-  //       {
-  //         text: 'Distance From Cochin',
-  //         align: 'center',
-  //         sortable: true,
-  //         value: 'Distance',
-  //       },
-
-  //     ]
-  //   },
-  // },
+  methods: {
+    //
+  },
 };
 </script>
 <style>
 .home {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   padding: 0;
   margin: 0;
 }
