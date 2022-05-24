@@ -1,11 +1,18 @@
 <template>
-    <div>
-        <button @click="toggle">Toggle</button>
-        <div v-if="active">
-            <div v-for="link in DownloadsLinks" :key="link">
-                <div v-on:click="linkDownloader(link)" id="dropdownList">{{ link.linkName }}</div>
-            </div>
-        </div>
+    <div class="text-center">
+        <v-menu offset-y style="background-color:var(--primary-color);color:var(--secondary-color)">
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn v-bind="attrs" v-on="on">
+                    Downloads
+                </v-btn>
+            </template>
+            <v-list>
+                <v-list-item v-for="(item, index) in DownloadsLinks" :key="index">
+                    <v-list-item-title v-on:click="linkDownloader(item)" id="downloadsListItem">{{ item.linkName }}
+                    </v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-menu>
     </div>
 </template>
 <script>
@@ -55,19 +62,11 @@ export default {
 };
 </script>
 <style>
-/* #dropdownList change on hover cursor to pointer */
-#dropdownList:hover {
+#downloadsListItem {
     cursor: pointer;
 }
 
-/* #dropdownList change on click color opacity to 50% */
-#dropdownList:active {
-    opacity: 0.6;
-}
-
-/* #dropdownlist change background t0 var(--primary-color) and transform it to under the appbar */
-#dropdownList {
-    background-color: var(--primary-color);
-    transform: translateY(300%);
+#downloadsListItem:active {
+    opacity: 0.5;
 }
 </style>
