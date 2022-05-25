@@ -1,21 +1,14 @@
 <template>
   <v-footer id="websitefooter" padless>
     <v-row justify="center" no-gutters>
-      <v-btn
-        v-for="link in DownloadLinks"
-        id="websitefooter"
-        v-bind:src="link.linkSrc"
-        v-on:click="linkDownloader(link)"
-        :key="link"
-        text
-        rounded
-        class="my-2"
-      >
+      <v-btn v-for="link in DownloadLinks" id="websitefooter" v-bind:src="link.linkSrc"
+        v-on:click="linkDownloader(link)" :key="link" text rounded class="my-2">
+        <v-icon>mdi-download</v-icon>
         {{ link.linkName }}
       </v-btn>
       <v-col id="websitefooter" cols="12">
         <!-- <v-img src="./../assets/ccrs-logo.png" style="height:50px;width:60px;"></v-img> -->
-        <strong>Oncology 2022</strong>
+        <!-- <strong >Oncology 2022</strong> -->
         <!-- {{ new Date().getFullYear() }} — <strong>Vuetify</strong> -->
       </v-col>
     </v-row>
@@ -68,5 +61,7 @@ export default {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
+  font-size: smaller;
+  font-weight: 500;
 }
 </style>

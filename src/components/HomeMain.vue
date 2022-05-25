@@ -44,7 +44,7 @@ main {
   color: var(--secondary-color)
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #home {
     flex-direction: column;
   }
@@ -57,6 +57,11 @@ main {
     text-align: center;
     padding-bottom: 20px;
     /* width: max-content; */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 10px;
   }
 }
 </style>

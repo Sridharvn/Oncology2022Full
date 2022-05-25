@@ -1,8 +1,9 @@
 <template>
-    <div class="text-center">
-        <v-menu offset-y style="background-color:var(--primary-color);color:var(--secondary-color)">
+    <div class="text-center" id="dropDown">
+        <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
-                <v-btn v-bind="attrs" v-on="on">
+                <v-btn v-bind="attrs" v-on="on" color="error">
+                    <v-icon>mdi-download</v-icon>
                     Downloads
                 </v-btn>
             </template>
@@ -68,5 +69,12 @@ export default {
 
 #downloadsListItem:active {
     opacity: 0.5;
+}
+
+#dropDown {
+    background-color: var(--appBar-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0 20px;
 }
 </style>

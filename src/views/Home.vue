@@ -30,31 +30,20 @@
 
     <v-row>
       <v-col>
-        <br /><br />
-        <h3 style="text-align: center">Places of interest in Kerala</h3>
-        <v-spacer></v-spacer>
-        <Table
-          :TableData="PlacesofInterestData"
-          :Headers="PlacesofInterestHeaders"
-        ></Table>
+        <h3>Places of interest in Kerala</h3>
+        <!-- <v-spacer></v-spacer> -->
+        <Table :TableData="PlacesofInterestData" :Headers="PlacesofInterestHeaders"></Table>
       </v-col>
     </v-row>
     <v-row>
-      <v-col
-        ><br /><br />
-        <h3 style="text-align: center">Places in and around Cochin</h3>
-        <v-spacer></v-spacer>
-        <Table
-          :TableData="PlacesinKochiData"
-          :Headers="PlacesinKochiHeaders"
-        ></Table>
+      <v-col><br /><br />
+        <h3 style="color:var(--primary-color) !important">Places in and around Cochin</h3>
+        <!-- <v-spacer></v-spacer> -->
+        <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
       </v-col>
     </v-row>
     <br />
     <br />
-    <br />
-    <br />
-    <WebsiteFooter :DownloadLinks="DownloadsLinks"></WebsiteFooter>
   </div>
 </template>
 
@@ -65,7 +54,6 @@ import DetailsText from "../components/DetailsText.vue";
 // import InstructionsForPreperation from "../components/InstructionsForPreperation.vue";
 import Table from "../components/Table.vue";
 import HotelsDetails from "../components/HotelsDetails.vue";
-import WebsiteFooter from "../components/WebsiteFooter.vue";
 
 export default {
   name: "Home",
@@ -76,15 +64,9 @@ export default {
     // InstructionsForPreperation,
     Table,
     HotelsDetails,
-    WebsiteFooter,
   },
   mounted() {
     //
-  },
-  props: {
-    DownloadsLinks: {
-      type: Array,
-    },
   },
   data() {
     return {
@@ -232,5 +214,10 @@ export default {
   /* margin-bottom: 100px; */
   padding: 0;
   margin: 0;
+}
+
+h3 {
+  color: var(--secondary-color);
+  text-align: center
 }
 </style>

@@ -3,14 +3,7 @@
     <v-app-bar app elevation="5" id="appbar">
       <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="./assets/ccrs-logo.png"
-          transition="scale-transition"
-          width="60"
-        />
+        <v-img class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition" width="60" />
         <h2>Oncology 2022</h2>
       </div>
       <v-spacer></v-spacer>
@@ -18,18 +11,19 @@
     </v-app-bar>
 
     <v-main>
-      <router-view :DownloadsLinks="DownloadsLinks" />
+      <router-view style="margin:0%;padding:0%;" />
     </v-main>
+    <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
   </v-app>
 </template>
 
 <script>
 import axios from "axios";
-import gsap from "gsap";
-import ScrollTriggerPlugin from "gsap/ScrollTrigger";
+// import gsap from "gsap";
 import DropDown from "./components/DropDown.vue";
+import WebsiteFooter from "./components/WebsiteFooter.vue";
 export default {
-  components: { DropDown },
+  components: { DropDown, WebsiteFooter },
   name: "App",
 
   data: () => ({
@@ -64,21 +58,20 @@ export default {
   methods: {
     //
     revealAnimation() {
-      gsap.registerPlugin(ScrollTriggerPlugin);
-      gsap.from("h1,h2,h3,h4,h5,#Thanks", {
-        duration: 1,
-        opacity: 0,
-        xPercent: -100,
-        ease: "power4",
-        stagger: 0.1,
-      });
-      gsap.from("img,p,.footer1,#image,#tables", {
-        duration: 1,
-        opacity: 0,
-        xPercent: 100,
-        ease: "power4",
-        stagger: 0.1,
-      });
+      // gsap.from("h1,h2,h3,h4,h5,#Thanks", {
+      //   duration: 1,
+      //   opacity: 0,
+      //   xPercent: -100,
+      //   ease: "power4",
+      //   stagger: 0.1,
+      // });
+      // gsap.from("img,p,.footer1,#image,#tables,#dropDown", {
+      //   duration: 1,
+      //   opacity: 0,
+      //   xPercent: 100,
+      //   ease: "power4",
+      //   stagger: 0.1,
+      // });
     },
     linkDownloader(link) {
       // console.log(link.linkSrc);
@@ -121,5 +114,17 @@ export default {
 
 p {
   font-family: "Roboto", sans-serif;
+}
+
+/* disable scroll bar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  #appbar {
+    font-size: small;
+  }
 }
 </style>

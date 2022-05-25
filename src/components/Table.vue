@@ -33,5 +33,6 @@ export default {
 #tables {
     /* background-color: var(--secondary-color); */
     color: var(--secondary-color);
+    padding: 0 3%;
 }
 </style>
