@@ -8,13 +8,13 @@
       </h2>
       <h4 style="color:var(--text-color)">2022 October 14,15 and 16</h4>
       <h5>Organised by : CCRS</h5>
-      <h5> VENUE : HOTEL CROWNE PLAZA, KOCHI</h5>
+      <h5> VENUE : HOTEL Le Meridien, KOCHI</h5>
       <h5> Email : oncology2022india@gmail.com</h5>
       <h5>Website : www.oncology2022.in</h5>
       <br>
     </main>
     <aside>
-      <img src="./../assets/crowne-plaza-kochi-Resized.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
+      <img src="./../assets/Le_Meridian1.jpg" alt="" style="max-height: 90vh; max-width: 55vw;" />
       <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>

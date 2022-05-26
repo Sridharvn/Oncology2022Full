@@ -36,8 +36,8 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col><br /><br />
-        <h3 style="color:var(--primary-color) !important">Places in and around Cochin</h3>
+      <v-col><br />
+        <h3 style="color:var(--text-color) !important">Places in and around Cochin</h3>
         <!-- <v-spacer></v-spacer> -->
         <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
       </v-col>
@@ -217,7 +217,9 @@ export default {
 }
 
 h3 {
-  color: var(--secondary-color);
+  /* Crown Plaza color */
+  /* color: var(--secondary-color); */
+  color: var(--text-color);
   text-align: center
 }
 </style>

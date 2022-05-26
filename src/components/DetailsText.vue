@@ -57,8 +57,10 @@ export default {
 </script>
 <style scoped>
 div {
-    /* background-color: var(--primary-color); */
-    color: var(--primary-color);
+    /* Crowne Plaza Color */
+    /* color: var(--primary-color); */
+    /* Le Meridien Color */
+    color: var(--text-color);
     padding: 10px;
 }
 </style>

@@ -122,9 +122,9 @@ p {
   background: transparent;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 460px) {
   #appbar {
-    font-size: small;
+    font-size: x-small;
   }
 }
 </style>

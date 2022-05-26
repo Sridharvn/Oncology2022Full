@@ -1,6 +1,11 @@
 :root {
-    --primary-color: #44416E;
+    --primary-color: #C9D8F9;
+    --appBar-color: #b6cbf9;
+    --secondary-color: #47475A;
+    --text-color: #204827;
+    /* Crowne Plaza Colors */
+    /* --primary-color: #44416E;
     --appBar-color: #413f69;
     --secondary-color: #ff8400;
-    --text-color: #ccb158;
+    --text-color: #ccb158; */
 }

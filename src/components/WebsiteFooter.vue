@@ -58,8 +58,11 @@ export default {
 </script>
 <style>
 #websitefooter {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  /* Crowne Plaza colors */
+  /* background-color: var(--primary-color);
+  color: var(--secondary-color); */
+  background-color: var(--appBar-color);
+  color: var(--text-color);
   text-align: center;
   font-size: smaller;
   font-weight: 500;

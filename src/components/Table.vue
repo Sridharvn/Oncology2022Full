@@ -34,5 +34,6 @@ export default {
     /* background-color: var(--secondary-color); */
     color: var(--secondary-color);
     padding: 0 3%;
+    font-weight: bold;
 }
 </style>
