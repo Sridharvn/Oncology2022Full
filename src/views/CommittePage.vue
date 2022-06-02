@@ -66,9 +66,9 @@ export default {
         //
         JsonCreator(RawData, Data) {
             const text = RawData.split('\n');
-            console.log(text);
+            // console.log(text);
             this.JsonData = text;
-            console.log(this.JsonData);
+            // console.log(this.JsonData);
             // delete extra spaces and numbers from JsonData
             for (var i = 0; i < this.JsonData.length; i++) {
                 this.JsonData[i] = this.JsonData[i].replace(/\s+/g, '');

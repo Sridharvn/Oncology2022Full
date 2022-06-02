@@ -12,7 +12,9 @@
             </template>
             <v-list>
                 <v-list-item v-for="(item, index) in DownloadsLinks" :key="index">
-                    <v-list-item-title v-on:click="linkDownloader(item)" id="downloadsListItem">{{ item.linkName }}
+                    <v-list-item-title v-on:click="linkDownloader(item)" id="downloadsListItem">{{
+                            item.linkName
+                    }}
                     </v-list-item-title>
                 </v-list-item>
             </v-list>
@@ -46,11 +48,22 @@ export default {
             // console.log(link.linkSrc);
             // this.$router.push(link.linkSrc)
             const filename = link.linkName;
+            console.log("Inside axios function");
+            window.open(link.linkSrc);
             axios({
                 url: link.linkSrc,
                 method: "GET",
                 responseType: "blob",
+                // withCredentials: true,
+                crossorigin: true,
+                // headers: {
+                //     "Access-Control-Allow-Origin": "*",
+                //     "Access-Control-Allow-Methods": "GET,POST,PUT",
+                //     "Access-Control-Allow-Headers": "x-ms-*,content-*",
+                //     "content-type": "*",
+                // },
             }).then((response) => {
+                console.log("Inside axios");
                 const url = window.URL.createObjectURL(new Blob([response.data]));
                 const link = document.createElement("a");
                 link.href = url;

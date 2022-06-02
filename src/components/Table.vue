@@ -35,6 +35,7 @@ export default {
     color: var(--secondary-color);
     padding: 0 3%;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 
 /* @media screen and (max-width: 700px) {

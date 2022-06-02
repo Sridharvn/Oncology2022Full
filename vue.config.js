@@ -1,5 +1,6 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
-}
+    transpileDependencies: ["vuetify"],
+    // devServer: {
+    //     proxy: "http://oncology2022.in",
+    // },
+};

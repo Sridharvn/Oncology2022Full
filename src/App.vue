@@ -119,7 +119,7 @@ export default {
     },
     // function to read emitted value from downloadsLinks event
     addDataToDownloadLinks(data) {
-      console.log("Data got : ", data);
+      // console.log("Data got : ", data);
       this.DownloadLinks = data;
     },
     redirectToHome() {
