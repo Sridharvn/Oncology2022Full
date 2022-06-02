@@ -1,9 +1,10 @@
 <template>
-    <div class="text-center" id="dropDown">
+    <div class="text-center">
         <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
                 <!--Crowne Plaza Color -->
                 <!-- <v-btn v-bind="attrs" v-on="on" color="error"> -->
+                <!-- <v-btn v-bind="attrs" v-on="on" color="primary"  id="dropDown"> -->
                 <v-btn v-bind="attrs" v-on="on" color="primary">
                     <v-icon>mdi-download</v-icon>
                     Downloads
@@ -73,10 +74,15 @@ export default {
     opacity: 0.5;
 }
 
-#dropDown {
+#dropDownBtn {
     background-color: var(--appBar-color);
     color: var(--secondary-color);
     text-align: center;
     padding: 0 20px;
+    box-shadow: none;
+}
+
+.text-center {
+    padding: 10px;
 }
 </style>

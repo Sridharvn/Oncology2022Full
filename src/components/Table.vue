@@ -1,8 +1,8 @@
 <template>
     <div id="tables">
         <br>
-        <v-data-table :headers="Headers" :items="TableData" class="elevation-5" hide-default-footer dense
-            mobile-breakpoint="0" id="tables">
+        <v-data-table :headers="Headers" :items="TableData" class="elevation-5" hide-default-footer
+            mobile-breakpoint="0" id="tables" items-per-page="100">
         </v-data-table>
     </div>
 </template>
@@ -36,4 +36,12 @@ export default {
     padding: 0 3%;
     font-weight: bold;
 }
+
+/* @media screen and (max-width: 700px) {
+    #tables tr td {
+        text-align: left;
+        
+
+    }
+} */
 </style>
