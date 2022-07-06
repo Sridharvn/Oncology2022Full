@@ -2,7 +2,7 @@
     <div id="tables">
         <br>
         <v-data-table :headers="Headers" :items="TableData" class="elevation-5" hide-default-footer
-            mobile-breakpoint="0" id="tables" items-per-page="100">
+            mobile-breakpoint="0" id="tables" items-per-page="100" hide-default-header>
         </v-data-table>
     </div>
 </template>

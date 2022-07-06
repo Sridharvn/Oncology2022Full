@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-img id="image" src="./../assets/HotelDetails.png" style="mix-blend-mode: inherit;"></v-img>
+        <v-img id="image" src="./../assets/HotelDetails2.png" style="mix-blend-mode: inherit;"></v-img>
     </div>
 </template>
 <style scoped>
@@ -10,7 +10,7 @@ div {
 
 }
 
-/* #image {
+#image {
     mix-blend-mode: multiply;
-} */
+}
 </style>

@@ -72,12 +72,12 @@ export default {
             // console.log(this.JsonData);
             // delete extra spaces and numbers from JsonData
             for (var i = 0; i < this.JsonData.length; i++) {
-                this.JsonData[i] = this.JsonData[i].replace(/\s+/g, "");
+                this.JsonData[i] = this.JsonData[i].replace(/\s+/g, " ");
                 this.JsonData[i] = this.JsonData[i].replace(/\d+/g, "");
             }
             // remove . from start of each element in JsonData
             for (i = 0; i < this.JsonData.length; i++) {
-                this.JsonData[i] = this.JsonData[i].replace(/^\./, "");
+                this.JsonData[i] = this.JsonData[i].replace(/^\s\./, "");
             }
             // create a json object with element of JsonData as values and key as Name
             for (i = 0; i < this.JsonData.length; i++) {
@@ -86,6 +86,27 @@ export default {
                 });
             }
         }
+        // JsonCreator(RawData, Data) {
+        //     const text = RawData.split("\n");
+        //     // console.log(text);
+        //     this.JsonData = text;
+        //     // console.log(this.JsonData);
+        //     // delete extra spaces and numbers from JsonData
+        //     for (var i = 0; i < this.JsonData.length; i++) {
+        //         this.JsonData[i] = this.JsonData[i].replace(/\s+/g, "");
+        //         this.JsonData[i] = this.JsonData[i].replace(/\d+/g, "");
+        //     }
+        //     // remove . from start of each element in JsonData
+        //     for (i = 0; i < this.JsonData.length; i++) {
+        //         this.JsonData[i] = this.JsonData[i].replace(/^\./, "");
+        //     }
+        //     // create a json object with element of JsonData as values and key as Name
+        //     for (i = 0; i < this.JsonData.length; i++) {
+        //         Data.push({
+        //             Name: this.JsonData[i],
+        //         });
+        //     }
+        // }
     },
     components: { Table, HomeMain }
 }
