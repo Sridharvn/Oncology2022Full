@@ -18,6 +18,9 @@
           <v-tab @click="redirectToHome()" id="Tabs">
             Home
           </v-tab>
+          <v-tab @click="redirectToOrganizingOutlinePage()" id="Tabs">
+            Outline of Scientific Programme
+          </v-tab>
           <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
             International Faculty
           </v-tab>
@@ -27,6 +30,7 @@
           <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
             Organizing Committee
           </v-tab>
+
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
@@ -133,6 +137,9 @@ export default {
     },
     redirectToNationalFaculty() {
       this.$router.push({ path: '/NationalFaculty' });
+    },
+    redirectToOrganizingOutlinePage() {
+      this.$router.push({ path: '/Outline' });
     },
   },
 };
