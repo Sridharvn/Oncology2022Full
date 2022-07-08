@@ -1,6 +1,6 @@
 <template>
     <div id="CommittePage">
-        <HomeMain></HomeMain>
+        <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <v-row>
             <v-col>
                 <h1>Organizing Committee</h1>
@@ -15,6 +15,13 @@
 import Table from '../components/Table.vue'
 import HomeMain from '../components/HomeMain.vue'
 export default {
+    props: {
+        deviceType: {
+            type: String,
+            default: "desktop",
+            required: false
+        },
+    },
     name: "CommittePage",
     data() {
         return {

@@ -67,10 +67,12 @@ export default {
   },
   mounted() {
     //
+
   },
   data() {
     return {
       //
+      dataType: "",
       cardData: [
         {
           Image: "317582_1100-732x549.jpg",
@@ -205,6 +207,7 @@ export default {
     };
   },
   methods: {
+
     //
   },
 };

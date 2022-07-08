@@ -1,9 +1,10 @@
 <template>
     <div id="NationalFaculty">
-        <HomeMain></HomeMain>
+        <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <v-col>
             <h1>National Faculty</h1>
-            <Table :Headers="NationalFacultyHeaders" :TableData="NationalFacultyData"></Table>
+            <Table :Headers="NationalFacultyHeaders" :TableData="NationalFacultyData">
+            </Table>
         </v-col>
 
 
@@ -13,6 +14,13 @@
 import Table from '../components/Table.vue';
 import HomeMain from '../components/HomeMain.vue';
 export default {
+    props: {
+        deviceType: {
+            type: String,
+            default: "desktop",
+            required: false
+        },
+    },
     name: "NationalFaculty",
     data: () => ({
         NationalFacultyHeaders: [

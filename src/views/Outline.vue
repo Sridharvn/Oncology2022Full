@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <HomeMain></HomeMain>
+        <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <h1>Scientific Programme</h1>
         <div id="main">
             <main>
@@ -33,6 +33,12 @@
 import HomeMain from "../components/HomeMain.vue";
 import Activities from "../components/Activities.vue";
 export default {
+    props: {
+        deviceType: {
+            type: String,
+            default: "desktop"
+        }
+    },
     data() {
         return {
             points: [

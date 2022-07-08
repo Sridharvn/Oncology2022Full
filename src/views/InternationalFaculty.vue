@@ -1,6 +1,6 @@
 <template>
     <div id="InternationalFaculty">
-        <HomeMain></HomeMain>
+        <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <!-- <v-col>
             <h1>International Faculty</h1>
             <Table :Headers="InternationalFacultyHeaders" :TableData="InternationalFacultyData"></Table>
@@ -18,6 +18,13 @@ import HomeMain from "../components/HomeMain.vue";
 // import Table from "../components/Table.vue";
 import CardWithoutPhoto from "../components/CardWithoutPhoto.vue";
 export default {
+    props: {
+        deviceType: {
+            type: String,
+            default: "desktop",
+            required: false
+        },
+    },
     name: "InternationalFaculty",
     data() {
         return {

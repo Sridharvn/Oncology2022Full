@@ -42,7 +42,7 @@
         <button @click="redirectToHome()">&raquo;Home</button>
         <button @click="redirectToCommitteePage()">&raquo;Committee</button>
       </div> -->
-      <router-view style="margin:0%;padding:0%;" />
+      <router-view style="margin:0%;padding:0%;" :deviceType="deviceType" />
     </v-main>
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
   </v-app>
@@ -85,9 +85,28 @@ export default {
   mounted() {
     //
     this.revealAnimation();
+    this.deviceType();
   },
   methods: {
     //
+    deviceType() {
+      // const ua = navigator.userAgent;
+      // if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      //   this.deviceType = "tablet";
+      // }
+      // else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+      //   this.deviceType = "mobile";
+      // }
+      // this.deviceType = "desktop";
+      const width = window.innerWidth;
+      if (width < 768) {
+        this.deviceType = "mobile";
+      }
+      else {
+        this.deviceType = "desktop";
+      }
+      console.log(this.deviceType);
+    },
     revealAnimation() {
       // gsap.from("h1,h2,h3,h4,h5,#Thanks", {
       //   duration: 1,
