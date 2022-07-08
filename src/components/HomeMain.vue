@@ -11,7 +11,8 @@
       <h5> VENUE : HOTEL Le Meridien, KOCHI</h5>
       <h5> Email : oncology2022india@gmail.com</h5>
       <h5>Website : www.oncology2022.in</h5><br>
-      <v-img src="./../assets/cog-logo.png" contain max-height="50px"></v-img><br>
+      <v-img src="./../assets/cog-logo.png" contain max-height="80px" max-width="80px">
+      </v-img><br>
       <h5>Cancer is conquerable | Knowledge conquers cancer</h5>
       <br>
     </main>
