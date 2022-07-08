@@ -1,19 +1,37 @@
 <template>
     <div>
-        <h1>Outline of Scientific Programme</h1>
-        <v-spacer></v-spacer>
-        <div v-for="point in points" :key="point" id="points">
-            <v-icon color="var(--text-color)" size="small">
-                mdi-star-circle
-            </v-icon>
-            <span>{{ point }}</span>
+
+        <HomeMain></HomeMain>
+        <h1>Scientific Programme</h1>
+        <div id="main">
+            <main>
+                <Activities id="activities"></Activities>
+            </main>
+            <aside>
+                <div id="outlines">
+
+                    <v-spacer></v-spacer>
+                    <div v-for="point in points" :key="point" id="points">
+                        <v-icon color="var(--text-color)" size="small">
+                            mdi-star-circle
+                        </v-icon>
+                        <span>{{ point }}</span>
+                    </div>
+
+                </div>
+            </aside>
         </div>
-        <div id="quote">Dr. Patro's course on "Radiology for Oncologists". Radiation Oncologists especially please make
-            use of this golden opportunity. Those who are interested please give their names in advance to conference
+        <div id="quote">Dr. Patro's course on "Radiology for Oncologists". Radiation Oncologists especially
+            please
+            make
+            use of this golden opportunity. Those who are interested please give their names in advance to
+            conference
             mail id ASAP</div>
     </div>
 </template>
 <script>
+import HomeMain from "../components/HomeMain.vue";
+import Activities from "../components/Activities.vue";
 export default {
     data() {
         return {
@@ -23,12 +41,15 @@ export default {
                 "Nuances in Breast Cancer radiotherapy and re - eradiation in the era of neoadjuvant systemic   treatment",
                 "Management of intermediate risk Prostate Cancer - What is the way forward ? (Panel Discussion)",
                 "Evolving role of radiation in indolent lymphomas",
-                "Challenging Breast Cancer Cases(Panel Discussion)", " Spatially fractionated radiation therapy",
+                "Challenging Breast Cancer Cases(Panel Discussion)",
+                " Spatially fractionated radiation therapy",
                 "Integration of Immunotherapy and Radiotherapy in NSCLC management",
-                "Advances in improvement of quality of life and survival in upper GI Cancers", "Best treatments for early Prostate Cancer- Surgery, Radiation or neither(Panel Discussion)",
+                "Advances in improvement of quality of life and survival in upper GI Cancers",
+                "Best treatments for early Prostate Cancer- Surgery, Radiation or neither(Panel Discussion)",
                 " Multidisciplinary management of Thymic carcinomas",
                 "Innovative, Biological approaches to personalized radiotherapy in metastatic cancer of the Breast",
-                "Biologically driven adaptive radiotherapy", "New approaches to stage IV NSCLC(Panel discussion)",
+                "Biologically driven adaptive radiotherapy",
+                "New approaches to stage IV NSCLC(Panel discussion)",
                 "What is new in the management of Vulvar and Vaginal Cancers ? ",
                 "Endometrial Cancer - Past, present and future",
                 " Challenges in epithelial ovarian cancer management?",
@@ -67,8 +88,9 @@ export default {
                 " Immunotherapy in Biliary Tract Cancers",
                 " Case based Panel Discussion"
             ]
-        }
-    }
+        };
+    },
+    components: { HomeMain, Activities }
 }
 </script>
 <style scoped>
@@ -78,13 +100,17 @@ span {
     color: var(--text-color);
     padding: 0 10px;
 } */
+/* * {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.3);
+} */
 
 #points {
     text-align: left;
     color: var(--text-color);
     padding: 0 10px;
     font-size: larger;
-    margin-left: 3em;
+    margin-right: 10%;
 }
 
 #quote {
@@ -98,11 +124,65 @@ span {
     font-weight: 700;
 }
 
+/* #main {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+} */
+
+#activities {
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10%;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+}
+
 @media only screen and (max-width: 968px) {
 
     /*Big smartphones [426px -> 600px]*/
     #quote {
         font-size: medium;
+    }
+
+    aside {
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        flex-direction: column;
+        width: 100%;
+        /* background-color: rgba(255, 0, 0, 0.3); */
+    }
+
+    #main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
     }
 }
 </style>

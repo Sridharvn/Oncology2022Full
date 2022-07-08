@@ -3,14 +3,16 @@
     <main>
       <!-- <h1>Oncology 2022</h1> -->
       <h2>
-        International Conference on Multidisciplinary Management of Common
+        International Conference on Recent Advances in the Multidisciplinary Management of Common
         Malignancies
       </h2>
       <h4 style="color:var(--text-color)">2022 October 14,15 and 16</h4>
       <h5>Organised by : CCRS</h5>
       <h5> VENUE : HOTEL Le Meridien, KOCHI</h5>
       <h5> Email : oncology2022india@gmail.com</h5>
-      <h5>Website : www.oncology2022.in</h5>
+      <h5>Website : www.oncology2022.in</h5><br>
+      <v-img src="./../assets/cog-logo.png" contain max-height="50px"></v-img><br>
+      <h5>Cancer is conquerable | Knowledge conquers cancer</h5>
       <br>
     </main>
     <aside>
@@ -44,7 +46,7 @@ main {
   color: var(--secondary-color)
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   #home {
     flex-direction: column;
   }

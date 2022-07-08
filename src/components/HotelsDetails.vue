@@ -11,6 +11,6 @@ div {
 }
 
 #image {
-    mix-blend-mode: multiply;
+    border-radius: 20px;
 }
 </style>

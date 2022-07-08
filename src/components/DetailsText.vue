@@ -28,7 +28,7 @@
             <v-col> {{ DetailstextData.Thanks }}</v-col>
         </v-row>
         <v-spacer></v-spacer>
-        <v-row align="space-between">
+        <v-row align="space-between" id="detailsFooter">
             <v-col>
                 <details-footer :Footer="DetailstextData.Footer1"></details-footer>
             </v-col>
@@ -62,5 +62,13 @@ div {
     /* Le Meridien Color */
     color: var(--text-color);
     padding: 10px;
+}
+
+#Thanks {
+    font-weight: 500;
+}
+
+#detailsFooter {
+    font-weight: 600;
 }
 </style>

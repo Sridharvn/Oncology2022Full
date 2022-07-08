@@ -10,6 +10,7 @@
                 <CardWithoutPhoto :CardData="item"></CardWithoutPhoto>
             </v-col>
         </v-row>
+        <h4>List incomplete and more are expected</h4>
     </div>
 </template>
 <script>
@@ -32,7 +33,13 @@ export default {
             InternationalFacultyRawData: "",
             InternationalFacultyData: [
                 {
-                    Name: "Dr. Tracey O’connor MD",
+                    Name: "Dr. M V Pillai, MD, FACP",
+                    Designation: "Professor of Medical Oncology",
+                    Department: "",
+                    Centre: "Thomas Jefferson University, Philedhelpia, USA",
+                },
+                {
+                    Name: "Dr. Tracey O'mconnor MD",
                     Designation: "Associate Professor of Oncology & Medicine",
                     Department: "",
                     Centre: "Rosewell Park Comprehensive Cancer Centre, Buffalo, New York, USA",
@@ -48,6 +55,12 @@ export default {
                     Designation: "Assistant Professor of Oncology & Medicine",
                     Department: "Division of GI Malignancies",
                     Centre: "Rosewell Park Comprehensive Cancer Centre, Buffalo, New York, USA",
+                },
+                {
+                    Name: "Dr. Shashikant Lele MD, FACOG",
+                    Designation: "Professor of Gynaec Oncology",
+                    Department: "",
+                    Centre: "Roswell Park Cancer Institute, Buffaloe, New York, USA",
                 },
                 {
                     Name: "Dr. Nisar M Syed MD, FACRO",
@@ -78,6 +91,30 @@ export default {
                     Designation: "Consultant Radiation Oncologist",
                     Department: "",
                     Centre: "North Western Community Hospital, Arlington Heights Chicago, USA",
+                },
+                {
+                    Name: "Dr. Rema Jyotirmayi MD, MRCP, FRCR",
+                    Designation: "Consultant Clinical Oncologist",
+                    Department: "",
+                    Centre: "Maidstone & Tunbridge Wells, NHS Trust, UK",
+                },
+                {
+                    Name: "Dr. T Ajithkumar MD, MRCP, FRCR",
+                    Designation: "Clinical Oncologist",
+                    Department: "",
+                    Centre: "Addenbrookes Hospital, Cambridge, NHS, UK",
+                },
+                {
+                    Name: "Dr. Ajith Venniyoor MD, DNB, DM (Med Onco)",
+                    Designation: "Medical Oncologist",
+                    Department: "",
+                    Centre: "The Royal Hospital, Muscat, Oman",
+                },
+                {
+                    Name: "Dr.Khaleel K. Ashraf MD, FACP",
+                    Designation: "Consultant Medical & Hemato Oncologist",
+                    Department: "",
+                    Centre: "Brookwood Baptist Medical Centre, Birmingham, Alabama, USA",
                 },
             ],
         };
@@ -124,5 +161,11 @@ export default {
     min-width: fit-content;
     padding: 25px;
     min-height: fit-content;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 </style>

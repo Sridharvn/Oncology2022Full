@@ -19,7 +19,7 @@
             Home
           </v-tab>
           <v-tab @click="redirectToOrganizingOutlinePage()" id="Tabs">
-            Outline of Scientific Programme
+            Scientific Programme
           </v-tab>
           <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
             International Faculty
