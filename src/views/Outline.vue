@@ -15,7 +15,7 @@
                         <v-icon color="var(--text-color)" size="small">
                             mdi-star-circle
                         </v-icon>
-                        <span>{{ point }}</span>
+                        <span> {{ point }}</span>
                     </div>
 
                 </div>

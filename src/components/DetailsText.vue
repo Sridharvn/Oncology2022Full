@@ -7,7 +7,7 @@
         </v-row>
         <v-row dense>
             <v-col>
-                <h4>{{ DetailstextData.wish }}</h4>
+                <h4 style="text-align:left">{{ DetailstextData.wish }}</h4>
             </v-col>
         </v-row>
         <v-row dense>
