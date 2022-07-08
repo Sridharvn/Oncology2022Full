@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h2>Preconference Scientific Programmes on 13/10/22</h2>
+        <h3>Preconference Scientific Programmes on 13/10/22</h3>
         <div v-for="(point, index) in points" :key="point">
             {{ index + 1 }}) {{ point }}
         </div>
-        <h3> Preconference get together at 7.00 pm on 13/10/22</h3>
-        <h2>14th, 15th & 16th October</h2>
+        <h4> Preconference get together at 7.00 pm on 13/10/22</h4>
+        <h3>14th, 15th & 16th October</h3>
         <div v-for="(point, index) in points2" :key="point">
             {{ index + 1 }}){{ point }}
         </div>
@@ -49,12 +49,13 @@ h2 {
 }
 
 h3 {
-    text-align: left;
+    text-align: center;
 }
 
 div {
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
     color: var(--text-color);
 }
 </style>

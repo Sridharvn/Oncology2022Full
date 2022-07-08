@@ -23,7 +23,49 @@ export default {
                 value: "Name",
             },
         ],
-        NationalFacultyRawData: `    1. Dr. S H Advani MD, DM
+        NationalFacultyRawData: `    1. Dr. S H Advani MD, DM 
+        1. Dr. Sudeep Gupta MD, DM 
+        1. Dr. V P Gangadharan MD, DM 
+        1. Dr. K Pavithran MD, DM, FRCP 
+        1. Dr. Kumar Prabhash MD, DM 
+        1. Dr. Amit Varma MD 
+        1. Dr. K C Pathro MD, DNB, MBA 
+        1. Dr. Madhup Rastogi MD 
+        1. Dr. Shyam Aggarwal MD, DM 
+        1. Dr. Purvish Parikh MD, PhD 
+        1. Dr. O P Singh MD 
+        1. Dr. G K Rath MD 
+        1. Dr. Raju Titus Chacko MD 
+        1. Dr. Krupasankar MD, DM 
+        1. Dr. Vijayand Reddy MD, DNB 
+        1. Dr. Selvalakshmi MD 
+        1. Dr. Kalai Selvi MD, DM 
+        1. Dr. Anitha Ramesh MD, DCH, MSc, DM 
+        1. Dr. T Raja MD, DM 
+        1. Dr. Aswin MD, DNB 
+        1. Dr. Sajeed MD, DNB 
+        1. Dr. Cessal Thomas Kainickal MD 
+        1. Dr. Srinivas Chilukuri MD 
+        1. Dr. Aswathy Susan MD 
+        1. Dr. Rahul Krishnathri MD 
+        1. Dr. Raju Titus Chacko MD 
+        1. Dr. Ashish Singh MD, DM 
+        1. Prof. Shanmugha Sundaram DRM, DNB 
+        1. Dr. Sekhar Patil MD, DM 
+        1. Prof. Ramesh Billimagga MD, DRM 
+        1. Dr. Lokesh Vishwanath MD 
+        1. Dr. Subramaniyan MRCP, FRCR 
+        1. Dr. Sudhindran MS, FRCS 
+        1. Dr. Ginil Kumar MS, Mch 
+        1. Prof. Dr. Vivek Koushal MD, DNB 
+        1. Dr. Anoop MD, DM 
+        1. Dr. Deb Narayan Duda MD 
+        1. Dr. Manikantan MD, DM 
+        1. Dr. Sanju Cyriac MD, DM 
+        1. Dr. Arun Philip MD, DM 
+        1. Dr. Bharath Rangarajan MD, DM 
+        1. Dr. Indraneel Mallik MD `,
+        NationalFacultyRawDataOld: `    1. Dr. S H Advani MD, DM
     2. Dr. Sudeep Gupta MD, DM
     3. Dr. K Pavithran MD, DM
     4. Dr. Kumar Prabhash MD, DM
@@ -85,6 +127,7 @@ export default {
                     Name: this.JsonData[i],
                 });
             }
+            console.log(Data);
         }
         // JsonCreator(RawData, Data) {
         //     const text = RawData.split("\n");

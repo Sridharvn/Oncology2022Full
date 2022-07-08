@@ -9,7 +9,7 @@
             </main>
             <aside>
                 <div id="outlines">
-
+                    <h2 style="margin-left:1%">Outline</h2>
                     <v-spacer></v-spacer>
                     <div v-for="point in points" :key="point" id="points">
                         <v-icon color="var(--text-color)" size="small">
@@ -113,6 +113,10 @@ span {
     margin-right: 10%;
 }
 
+#outlines {
+    margin-top: 8%;
+}
+
 #quote {
     text-align: center;
     color: var(--text-color);
@@ -140,7 +144,8 @@ span {
 
 #main {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-content: space-around;
     flex-direction: row;
 }
 
@@ -175,13 +180,14 @@ main {
         text-align: justify;
         flex-direction: column;
         width: 100%;
+        padding: 10px;
         /* background-color: rgba(255, 0, 0, 0.3); */
     }
 
     #main {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-content: space-evenly;
         flex-direction: column;
     }
 }

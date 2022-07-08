@@ -27,7 +27,25 @@ export default {
                     value: "Name",
                 },
             ],
-            OrganizingCommitteeRawData: `    1. Dr. Francis V James MD
+            OrganizingCommitteeRawData: ` 1. Dr. Francis V James MD 
+            2. Dr. Jayaprakash Madhavan MD, DNB 
+            3. Dr. K Pavithran MD, DM, FRCP 
+            4. Dr. Jose Tom MD 
+            5. Dr. Chirag Desai MD, DM 
+            6. Dr. Jacob Kurian MS, Mch, FRCS 
+            7. Dr. Aju Mathew MD (US), AB (Int Med, Med Onc Haem Onc), M.phil (Cambridge), FACP 
+            8. Dr. Madhu Sairam MD 
+            9. Dr. Anm Cal MD 
+            10. Dr. Jose Paul MD, FRCR 
+            11. Dr. Nibin Bose MD 
+            12. Dr. Sajeev George Pulickal MD 
+            13. Dr. Vijaykaran Reddy MD 
+            14. Dr. Jaisankar P MD, DM 
+            15. Dr. Rony Benson MD, DM, MRCP 
+            16. Dr. Surij Salih MS, Mch 
+            17. Dr. Anoop Jose MD 
+            18. Mr. Jithin MSc, DRP `,
+            OrganizingCommitteeRawData1: `    1. Dr. Francis V James MD
     2. Dr. Jayaprakash Madhavan MD, DNB
     3. Dr. K Pavithran MD, DM
     4. Dr. Jose Tom MD
