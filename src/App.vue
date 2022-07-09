@@ -3,18 +3,17 @@
     <v-app-bar app elevation="5" id="appbar">
       <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
-        <v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click="redirectToHome()">
           <v-img class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition" width="60" />
         </v-app-bar-nav-icon>
-        <v-toolbar-title>
+        <v-toolbar-title @click="redirectToHome()">
           <strong>Oncology 2022</strong>
         </v-toolbar-title>
       </div>
       <template v-slot:extension>
-        <v-tabs v-model="tab" background-color="var(--Tab-color)" center-active dark fixed-tabs
-          color="var(--TabSlider-color)">
+        <v-tabs v-model="tabs" background-color="var(--Tab-color)" center-active dark fixed-tabs
+          color="var(--TabSlider-color)" show-arrows>
           <v-tabs-slider color="var(--TabSlider-color)"></v-tabs-slider>
-
           <v-tab @click="redirectToHome()" id="Tabs">
             Home
           </v-tab>
@@ -37,13 +36,20 @@
       <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down>
 
     </v-app-bar>
+
     <v-main>
-      <!-- <div id="TopButtons">
-        <button @click="redirectToHome()">&raquo;Home</button>
-        <button @click="redirectToCommitteePage()">&raquo;Committee</button>
-      </div> -->
+      <!-- <v-icon>mdi-home</v-icon> -->
+      <v-speed-dial fixed right bottom>
+        <template v-slot:activator>
+          <v-btn elevation="24" @click="redirectToHome()" color="var(--primary-color)">
+            <v-icon large color="var(--text-color)">mdi-home</v-icon>
+          </v-btn>
+        </template>
+      </v-speed-dial>
       <router-view style="margin:0%;padding:0%;" :deviceType="deviceType" />
+
     </v-main>
+
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
   </v-app>
 </template>
@@ -59,6 +65,7 @@ export default {
 
   data: () => ({
     //
+    tabs: null,
     DownloadsLinks: [
       {
         linkName: "Brochure PDF (8 Mb)",
@@ -146,18 +153,28 @@ export default {
       this.DownloadLinks = data;
     },
     redirectToHome() {
+      this.tabs = "Home"
+      window.scrollTo(0, 0);
       this.$router.push({ path: '/' });
     },
     redirectToOrganizingCommitteePage() {
+      this.tabs = "Scientific Programme"
+      window.scrollTo(0, 0);
       this.$router.push({ path: '/Committee' });
     },
     redirectToInternationalFaculty() {
+      this.tabs = "International Faculty"
+      window.scrollTo(0, 0);
       this.$router.push({ path: '/InternationalFaculty' });
     },
     redirectToNationalFaculty() {
+      this.tabs = "National Faculty"
+      window.scrollTo(0, 0);
       this.$router.push({ path: '/NationalFaculty' });
     },
     redirectToOrganizingOutlinePage() {
+      this.tabs = "Organizing Committee"
+      window.scrollTo(0, 0);
       this.$router.push({ path: '/Outline' });
     },
   },

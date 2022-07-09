@@ -1,8 +1,8 @@
 <template>
-    <v-card class="mx-auto" max-width="344">
+    <v-card class="mx-auto" max-width="344" id="card">
         <v-card-text>
             <!-- <div>Word of the Day</div> -->
-            <p class="text-h4 text--primary">
+            <p class="text-h4 text-primary">
                 {{ CardData.Name }}
             </p>
             <p>{{ CardData.Designation }}</p>
@@ -54,5 +54,10 @@ export default {
     opacity: 1 !important;
     position: absolute;
     width: 100%;
+}
+
+#card,
+p {
+    color: var(--text-color);
 }
 </style>
