@@ -51,6 +51,7 @@
     </v-main>
 
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
+    <div id="footer">Cybernet Developers</div>
   </v-app>
 </template>
 
