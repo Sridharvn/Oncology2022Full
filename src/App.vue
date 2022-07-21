@@ -51,7 +51,8 @@
     </v-main>
 
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
-    <div id="footer">Cybernet Developers</div>
+    <!-- <br>
+    <div id="footer">Cybernet Developers</div> -->
   </v-app>
 </template>
 
@@ -180,6 +181,7 @@ export default {
     },
   },
 };
+
 </script>
 <style>
 @import "./styles/styleVariables.css";
@@ -212,7 +214,14 @@ p {
   background: var(--primary-color);
   padding: 10px;
 }
-
+#footer{
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 @media screen and (max-width: 460px) {
   #appbar {
