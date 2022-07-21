@@ -1,47 +1,101 @@
 <template>
-    <div id="background">
-        <h1>Payment Gateway link</h1>
-        <a href="https://feebook.southindianbank.com/FeeBookUser/org?id=670">
-        <v-img src="./../assets/PaymentQR.png" id="paymentImage"/>
-        </a>
+  <div id="background">
+    <div id="textPart">
+    <div>
+      Registration Form :
+      <span
+        ><a href="http://www.oncology2022.in/Registration-Form.pdf"
+          >Registration-Form.pdf</a
+        ></span
+      >
     </div>
+    <div>
+      Payment Gateway Link :
+      <span
+        ><a href="https://feebook.southindianbank.com/FeeBookUser/org?id=670"
+          >https://feebook.southindianbank.com/FeeBookUser/org?id=670</a
+        ></span
+      >
+    </div></div>
+    <div id="qr">
+      <a href="https://feebook.southindianbank.com/FeeBookUser/org?id=670">
+        <v-img src="./../assets/PaymentQR.png" id="paymentImage" />
+      </a>
+      Scan to pay
+    </div>
+  </div>
 </template>
 <script></script>
 <style lang="scss" scoped>
-#background{
+#background {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Tab-color);
+  // padding: 30px;
+}
+#qr{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--Tab-color);
-    // padding: 30px;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
 }
-#paymentImage{
-     background-blend-mode: luminosity;
-     margin: 20px;
+#textPart{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
+    font-size: x-large;
 }
-h1{
-    color: var(--text-color);
-    margin: 1px;
+#paymentImage {
+  background-blend-mode: luminosity;
+//   margin: 20px;
 }
-@media screen and (max-width: 600px) {
-    #paymentImage{
-        width: 150px;
-        height: 150px;
-    }
 
-    h1{
-        font-size: xx-large;
-    }
+h1 {
+  color: var(--text-color);
+  margin: 1px;
 }
+
+* {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  #paymentImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+  #background{
+    flex-direction: column;
+  }
+  #textPart{
+    font-size: smaller;
+  }
+//   #textPart a{
+//     font-size: x-small;
+//   }
+}
+
 @media screen and (max-width: 460px) {
-    #paymentImage{
-        width: 100px;
-        height: 100px;
-    }
+  #paymentImage {
+    width: 100px;
+    height: 100px;
+  }
 
-    h1{
-        font-size: large;
-    }
+  h1 {
+    font-size: large;
+  }
 }
 </style>
