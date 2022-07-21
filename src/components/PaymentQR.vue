@@ -68,7 +68,7 @@ h1 {
   font-weight: 700;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 981px) {
   #paymentImage {
     width: 150px;
     height: 150px;
@@ -81,14 +81,14 @@ h1 {
     flex-direction: column;
   }
   #textPart{
-    font-size: smaller;
+    font-size: medium;
   }
 //   #textPart a{
 //     font-size: x-small;
 //   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
   #paymentImage {
     width: 100px;
     height: 100px;
@@ -96,6 +96,9 @@ h1 {
 
   h1 {
     font-size: large;
+  }
+  #textPart{
+    font-size: smaller;
   }
 }
 </style>

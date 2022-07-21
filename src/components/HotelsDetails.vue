@@ -13,4 +13,8 @@ div {
 #image {
     border-radius: 20px;
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 </style>

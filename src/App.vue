@@ -195,6 +195,10 @@ export default {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   padding: 0;
   margin: 0;
+  /* add background color red with low opacity */
+  /* background-color: rgba(255, 0, 0, 0.1); */
+  /* add border with low opacity */
+  /* border: 1px solid rgba(0, 0, 0, 0.705); */
 }
 
 p {
