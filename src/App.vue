@@ -49,7 +49,7 @@
       <router-view style="margin:0%;padding:0%;" :deviceType="deviceType" />
 
     </v-main>
-
+    <PaymentQR v-if="this.$route.name!='Home'"></PaymentQR>
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
     <!-- <br>
     <div id="footer">Cybernet Developers</div> -->
@@ -57,12 +57,13 @@
 </template>
 
 <script>
+import PaymentQR from './components/PaymentQR.vue'
 import axios from "axios";
 // import gsap from "gsap";
 import DropDown from "./components/DropDown.vue";
 import WebsiteFooter from "./components/WebsiteFooter.vue";
 export default {
-  components: { DropDown, WebsiteFooter },
+  components: { DropDown, WebsiteFooter, PaymentQR },
   name: "App",
 
   data: () => ({
@@ -70,7 +71,7 @@ export default {
     tabs: null,
     DownloadsLinks: [
       {
-        linkName: "Brochure PDF (8 Mb)",
+        linkName: "Brochure (PDF)",
         linkSrc: "http://www.oncology2022.in/brochure-2022-1.pdf",
       },
       {

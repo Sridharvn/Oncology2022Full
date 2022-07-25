@@ -127,8 +127,9 @@ span {
     text-align: center;
     color: var(--text-color);
     padding: 0 10px;
-    font-size: xx-large;
+    font-size: x-large;
     margin: 20px;
+    margin-right: 30px;
     border: 1px solid var(--text-color);
     border-radius: 30px;
     font-weight: 700;
