@@ -15,9 +15,11 @@
                 <p>
                     {{ DetailstextData.Details }}
                 </p>
-                <p v-if="DetailstextData.Details2">
-                    {{ DetailstextData.Details2 }}
-                </p>
+                <!-- <p v-if="DetailstextData.Details2"></p> -->
+                <div v-for="Details in DetailstextData.Details2" :key="Details">
+                    {{ Details }}
+                </div>
+                <!-- {{ DetailstextData.Details2 }} -->
                 <p v-if="DetailstextData.Details3">
 
                     {{ DetailstextData.Details3 }}
