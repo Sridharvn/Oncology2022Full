@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h3>Preconference Scientific Programmes on 13/10/22</h3>
+        <h3>Preconference Scientific Programmes on 13/10/22 at IMA Hall, Kaloor, Kochi</h3>
         <div v-for="(point, index) in points" :key="point">
             {{ index + 1 }}) {{ point }}
         </div>
         <h4> Preconference get together at 7.00 pm on 13/10/22</h4>
-        <h3>14th, 15th & 16th October</h3>
+        <h3>14th, 15th & 16th October at Hotel Le Meridian, Kochi</h3>
         <div v-for="(point, index) in points2" :key="point">
             {{ index + 1 }}){{ point }}
         </div>
