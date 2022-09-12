@@ -12,15 +12,15 @@
       Mob:9562084100/9447073203
     </div>
     <div id="textPart">
-      <div>
-        Registration Form (Online):
-        <span><a href="https://forms.gle/Q2Bv2c55nJkSfjob9"
-            target="_blank">https://forms.gle/Q2Bv2c55nJkSfjob9</a></span>
+      <div style="font-size:xx-large">
+        <v-icon size="larger" color="var(--link-color)">mdi-chevron-right-box</v-icon>
+        <span><a href="https://forms.gle/Q2Bv2c55nJkSfjob9" target="_blank">Click to Register</a>
+        </span>
       </div>
-      <div>
+      <!-- <div>
         Registration Form (Print):
         <span><a href="http://www.oncology2022.in/Registration-Form.pdf">Registration-Form.pdf</a></span>
-      </div>
+      </div> -->
       <div>
         Payment Gateway Link:
         <span><a

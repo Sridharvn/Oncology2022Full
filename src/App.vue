@@ -71,15 +71,15 @@ export default {
     tabs: null,
     DownloadsLinks: [
       {
+        linkName: `Online Registration Form`,
+        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
+      },
+      {
         linkName: "Brochure (PDF)",
         linkSrc: "http://www.oncology2022.in/brochure-2022-1.pdf",
       },
       {
-        linkName: "Registration Form (Online)",
-        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
-      },
-      {
-        linkName: "Registration Form (Print)",
+        linkName: "Registration Form (PDF)",
         linkSrc: "http://www.oncology2022.in/Registration-Form.pdf",
       },
       {
