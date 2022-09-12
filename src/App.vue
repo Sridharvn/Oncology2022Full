@@ -75,7 +75,11 @@ export default {
         linkSrc: "http://www.oncology2022.in/brochure-2022-1.pdf",
       },
       {
-        linkName: "Registration Form (PDF)",
+        linkName: "Registration Form (Online)",
+        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
+      },
+      {
+        linkName: "Registration Form (Print)",
         linkSrc: "http://www.oncology2022.in/Registration-Form.pdf",
       },
       {
@@ -89,10 +93,6 @@ export default {
       {
         linkName: "Abstract Instructions (PDF)",
         linkSrc: "http://www.oncology2022.in/Abstract-Instructions.pdf",
-      },
-      {
-        linkName: "Registration Link",
-        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
       },
     ],
   }),

@@ -13,7 +13,12 @@
     </div>
     <div id="textPart">
       <div>
-        Registration Form:
+        Registration Form (Online):
+        <span><a href="https://forms.gle/Q2Bv2c55nJkSfjob9"
+            target="_blank">https://forms.gle/Q2Bv2c55nJkSfjob9</a></span>
+      </div>
+      <div>
+        Registration Form (Print):
         <span><a href="http://www.oncology2022.in/Registration-Form.pdf">Registration-Form.pdf</a></span>
       </div>
       <div>
@@ -21,11 +26,7 @@
         <span><a
             href="https://feebook.southindianbank.com/FeeBookUser/org?id=670">https://feebook.southindianbank.com/FeeBookUser/org?id=670</a></span>
       </div>
-      <div>
-        Registration Link:
-        <span><a href="https://forms.gle/Q2Bv2c55nJkSfjob9"
-            target="_blank">https://forms.gle/Q2Bv2c55nJkSfjob9</a></span>
-      </div>
+
     </div>
     <div id="qr">
       <a href="https://feebook.southindianbank.com/FeeBookUser/org?id=670">
