@@ -1,5 +1,6 @@
 <template>
   <div id="background">
+    <!-- https://forms.gle/Q2Bv2c55nJkSfjob9 -->
     <div id="registrationHowto" style="color:var(--text-color2)">
       Regn forms can be sent by post to: <br>
       Chairman/Secretary,<br>
@@ -19,6 +20,11 @@
         Payment Gateway Link:
         <span><a
             href="https://feebook.southindianbank.com/FeeBookUser/org?id=670">https://feebook.southindianbank.com/FeeBookUser/org?id=670</a></span>
+      </div>
+      <div>
+        Registration Link:
+        <span><a href="https://forms.gle/Q2Bv2c55nJkSfjob9"
+            target="_blank">https://forms.gle/Q2Bv2c55nJkSfjob9</a></span>
       </div>
     </div>
     <div id="qr">
@@ -80,7 +86,8 @@ h1 {
 * {
   font-weight: 700;
 }
-@media  screen and (max-width: 1115px) {
+
+@media screen and (max-width: 1115px) {
   #paymentImage {
     width: 150px;
     height: 150px;
@@ -101,9 +108,11 @@ h1 {
   #registrationHowto {
     font-size: medium;
   }
-#registrationHowto{
+
+  #registrationHowto {
     margin-left: -400px;
-}
+  }
+
   //   #textPart a{
   //     font-size: x-small;
   //   }
@@ -118,9 +127,11 @@ h1 {
   h1 {
     font-size: large;
   }
-#registrationHowto{
+
+  #registrationHowto {
     margin-left: -35%;
-}
+  }
+
   #textPart,
   #registrationHowto {
     font-size: smaller;

@@ -90,6 +90,10 @@ export default {
         linkName: "Abstract Instructions (PDF)",
         linkSrc: "http://www.oncology2022.in/Abstract-Instructions.pdf",
       },
+      {
+        linkName: "Registration Link",
+        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
+      },
     ],
   }),
   mounted() {
@@ -220,7 +224,8 @@ p {
   background: var(--primary-color);
   padding: 10px;
 }
-#footer{
+
+#footer {
   background-color: var(--dark-color);
   color: var(--primary-color);
   text-align: center;
