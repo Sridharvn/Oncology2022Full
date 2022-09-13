@@ -4,7 +4,8 @@ import CommittePageVue from "../views/CommittePage.vue";
 import Home from "../views/Home.vue";
 import InternationalFacultyVue from "../views/InternationalFaculty.vue";
 import NationalFacultyVue from "../views/NationalFaculty.vue";
-import OutlineVue from "../views/Outline.vue";
+// import OutlineVue from "../views/Outline.vue";
+import Programmes from '@/views/Programmes'
 
 Vue.use(VueRouter);
 
@@ -16,7 +17,7 @@ const routes = [{
     {
         path: "/Outline",
         name: "Outline of Scientific Programme",
-        component: OutlineVue,
+        component: Programmes,
     },
     {
         path: "/Committee",
