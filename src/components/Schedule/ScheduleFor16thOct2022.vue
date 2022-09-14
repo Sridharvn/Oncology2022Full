@@ -163,10 +163,6 @@ export default {
           Description: "Announcement of Results and Distribution of prizes",
           Speaker: "",
         },
-        {
-          Description: "",
-          Speaker: "",
-        },
       ],
       scheduleListHallC: [
         {
