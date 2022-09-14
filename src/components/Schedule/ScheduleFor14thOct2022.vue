@@ -6,7 +6,7 @@
   </div> -->
   <div>
     <h1>14th October 2022 (Day 1) - Hall A (Oman Hall)</h1>
-    <h2 class="right">Registration - 7:30 AM Onwards</h2>
+    <h2 class="right text-color-class">Registration - 7:30 AM Onwards</h2>
     <v-card class="mx-auto">
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleList" :key="schedule" small>
@@ -15,8 +15,6 @@
           {{ schedule.Speaker }}
           <hr />
         </v-timeline-item>
-        <!-- <v-timeline-item class="text-right"> timeline item </v-timeline-item>
-      <v-timeline-item>timeline item</v-timeline-item> -->
       </v-timeline>
     </v-card>
     <h3>Inaugural Ceremony, Cultural Events and Dinner</h3>
@@ -151,10 +149,10 @@ export default {
           Description: `Prof. Manoj Gupta MD, DNB, who is shortly becoming the next President of AROI is well known to all of us. He  will be doing the course over 8 hours and it will be very valuable for Radiation Oncology Residents, Physicists and Radiation Oncologists to master the tough subject “Clinical Radiobiology”`,
           Speaker: "",
         },
-        {
-          Description: "",
-          Speaker: "",
-        },
+        // {
+        //   Description: "",
+        //   Speaker: "",
+        // },
       ],
     };
   },
