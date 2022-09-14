@@ -40,6 +40,7 @@
                 <ScheduleFor13thOct2022></ScheduleFor13thOct2022>
             </v-tab-item> -->
     </v-tabs>
+    <v-img src="./../assets/BusAnnouncement.png"></v-img>
   </div>
 </template>
 

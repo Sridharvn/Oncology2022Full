@@ -50,7 +50,7 @@
         </v-timeline-item>
       </v-timeline>
     </v-card>
-    <h3>Gala Dinner 7:00PM Onwards</h3>
+    <!-- <h3>Gala Dinner 7:00PM Onwards</h3> -->
   </div>
 </template>
 <style>
