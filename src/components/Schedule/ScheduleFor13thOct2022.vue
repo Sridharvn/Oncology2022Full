@@ -61,7 +61,10 @@
     <h2 class="left">Start of the Programme - 8:55AM</h2>
     <div v-for="session in sessionList" :key="session">
       <h4 class="text-color-class left" id="sessions">
-        <v-icon>mdi-chevron-right</v-icon>
+        <v-icon v-if="session.includes(`Session`)" class="text-color-class"
+          >mdi-arrow-right-box</v-icon
+        >
+        <v-icon v-else class="text-color-class">mdi-chevron-right</v-icon>
         {{ session }}
       </h4>
     </div>

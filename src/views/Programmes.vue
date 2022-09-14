@@ -26,6 +26,20 @@
         <!-- </v-card> -->
       </v-tab-item>
     </v-tabs-items>
+    <v-tabs
+      v-model="tab"
+      background-color="var(--primary-color)"
+      color="var(--text-color)"
+      grow
+      show-arrows
+    >
+      <v-tab v-for="item in items" :key="item">
+        {{ item }}
+      </v-tab>
+      <!-- <v-tab-item value="item">
+                <ScheduleFor13thOct2022></ScheduleFor13thOct2022>
+            </v-tab-item> -->
+    </v-tabs>
   </div>
 </template>
 

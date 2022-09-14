@@ -1,12 +1,14 @@
 <template>
-  <v-card class="mx-auto" max-width="344" min-width="320">
+  <v-card class="mx-auto" max-width="250" min-width="200">
     <v-img :src="require(`@/assets/${cardData.Image}`)" height="350px"></v-img>
     <!-- <v-img :src="require(`@/assets/${cardData.Image}`)" height="200px"></v-img> -->
 
     <v-card-title> {{ cardData.Name }} </v-card-title>
 
     <v-card-subtitle> {{ cardData.Designation }} </v-card-subtitle>
-    <v-card-subtitle v-if="cardData.Department"> {{ cardData.Department }} </v-card-subtitle>
+    <v-card-subtitle v-if="cardData.Department">
+      {{ cardData.Department }}
+    </v-card-subtitle>
     <v-card-subtitle> {{ cardData.Centre }} </v-card-subtitle>
 
     <!-- <v-card-actions @click="show = !show">
