@@ -5,7 +5,7 @@
     <v-img src="./../../assets/schedule/Schedule15th3.png" max-width="1100px"></v-img>
   </div> -->
   <div>
-    <h1>15th October 2022 (Day 1) - Hall A/Hall B/Hall C</h1>
+    <h1>15th October 2022 (Day 2)</h1>
     <h2 class="center text-color-class">Meet the expert session in Oman Hall</h2>
     <h4>
       1. Dr. Shashikant Lele MD, FACOG,<br />
@@ -16,10 +16,11 @@
       <br />
       5. Dr. T Ajithkumar MD, MRCP, FRCR
       <br />
-      6. Dr. Ajith Venniyoor MD, DM 7. Dr. Kurian Joseph FRCR, FRCP
+      6. Dr. Ajith Venniyoor MD, DM<br />
+      7. Dr. Kurian Joseph FRCR, FRCP
     </h4>
     <v-card class="mx-auto">
-      <h2 class="center">Hall A</h2>
+      <h2 class="center">Hall A/Hall B/Hall C</h2>
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleListHallA" :key="schedule" small>
           {{ schedule.Description }}
