@@ -29,7 +29,7 @@
     <BusAnnouncement></BusAnnouncement>
     <v-tabs
       v-model="tab"
-      background-color="var(--primary-color)"
+      background-color="var(--appBar-color)"
       color="var(--text-color)"
       grow
       show-arrows
@@ -41,6 +41,8 @@
                 <ScheduleFor13thOct2022></ScheduleFor13thOct2022>
             </v-tab-item> -->
     </v-tabs>
+    <!-- <BusAnnouncement></BusAnnouncement> -->
+
     <!-- <v-img src="./../assets/BusAnnouncement.png"></v-img> -->
   </div>
 </template>
