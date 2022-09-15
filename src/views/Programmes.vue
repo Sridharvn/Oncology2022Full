@@ -26,6 +26,7 @@
         <!-- </v-card> -->
       </v-tab-item>
     </v-tabs-items>
+    <BusAnnouncement></BusAnnouncement>
     <v-tabs
       v-model="tab"
       background-color="var(--primary-color)"
@@ -40,7 +41,7 @@
                 <ScheduleFor13thOct2022></ScheduleFor13thOct2022>
             </v-tab-item> -->
     </v-tabs>
-    <v-img src="./../assets/BusAnnouncement.png"></v-img>
+    <!-- <v-img src="./../assets/BusAnnouncement.png"></v-img> -->
   </div>
 </template>
 
@@ -49,6 +50,7 @@ import ScheduleFor13thOct2022 from "../components/Schedule/ScheduleFor13thOct202
 import ScheduleFor14thOct2022 from "../components/Schedule/ScheduleFor14thOct2022.vue";
 import ScheduleFor15thOct2022 from "../components/Schedule/ScheduleFor15thOct2022.vue";
 import ScheduleFor16thOct2022 from "../components/Schedule/ScheduleFor16thOct2022.vue";
+import BusAnnouncement from "../components/BusAnnouncement.vue";
 export default {
   data() {
     return {
@@ -69,6 +71,7 @@ export default {
     ScheduleFor14thOct2022,
     ScheduleFor15thOct2022,
     ScheduleFor16thOct2022,
+    BusAnnouncement,
   },
 };
 </script>

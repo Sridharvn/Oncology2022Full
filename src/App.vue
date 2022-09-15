@@ -4,37 +4,48 @@
       <!-- <v-app-bar app elevation="10" elevate-on-scroll shrink-on-scroll id="appbar"> -->
       <div class="d-flex align-center">
         <v-app-bar-nav-icon @click="redirectToHome()">
-          <v-img class="shrink mr-2" contain src="./assets/ccrs-logo.png" transition="scale-transition" width="60" />
+          <v-img
+            class="shrink mr-2"
+            contain
+            src="./assets/ccrs-logo.png"
+            transition="scale-transition"
+            width="60"
+          />
         </v-app-bar-nav-icon>
         <v-toolbar-title @click="redirectToHome()">
           <strong>Oncology 2022</strong>
         </v-toolbar-title>
       </div>
       <template v-slot:extension>
-        <v-tabs v-model="tabs" background-color="var(--Tab-color)" center-active dark fixed-tabs
-          color="var(--TabSlider-color)" show-arrows>
+        <v-tabs
+          v-model="tabs"
+          background-color="var(--Tab-color)"
+          center-active
+          dark
+          fixed-tabs
+          color="var(--TabSlider-color)"
+          show-arrows
+        >
           <v-tabs-slider color="var(--TabSlider-color)"></v-tabs-slider>
-          <v-tab @click="redirectToHome()" id="Tabs">
-            Home
-          </v-tab>
+          <v-tab @click="redirectToHome()" id="Tabs"> Home </v-tab>
           <v-tab @click="redirectToOrganizingOutlinePage()" id="Tabs">
             Scientific Programme
           </v-tab>
           <v-tab @click="redirectToInternationalFaculty()" id="Tabs">
             International Faculty
           </v-tab>
-          <v-tab @click="redirectToNationalFaculty()" id="Tabs">
-            National Faculty
-          </v-tab>
+          <v-tab @click="redirectToNationalFaculty()" id="Tabs"> National Faculty </v-tab>
           <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
             Organizing Committee
           </v-tab>
-
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
-      <drop-down :DownloadsLinks="DownloadsLinks" :name="Download" id="DropDown"></drop-down>
-
+      <drop-down
+        :DownloadsLinks="DownloadsLinks"
+        :name="Download"
+        id="DropDown"
+      ></drop-down>
     </v-app-bar>
 
     <v-main>
@@ -46,10 +57,9 @@
           </v-btn>
         </template>
       </v-speed-dial>
-      <router-view style="margin:0%;padding:0%;" :deviceType="deviceType" />
-
+      <router-view style="margin: 0%; padding: 0%" :deviceType="deviceType" />
     </v-main>
-    <PaymentQR v-if="this.$route.name!='Home'"></PaymentQR>
+    <PaymentQR v-if="this.$route.name != 'Home'"></PaymentQR>
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
     <!-- <br>
     <div id="footer">Cybernet Developers</div> -->
@@ -57,7 +67,7 @@
 </template>
 
 <script>
-import PaymentQR from './components/PaymentQR.vue'
+import PaymentQR from "./components/PaymentQR.vue";
 import axios from "axios";
 // import gsap from "gsap";
 import DropDown from "./components/DropDown.vue";
@@ -115,8 +125,7 @@ export default {
       const width = window.innerWidth;
       if (width < 768) {
         this.deviceType = "mobile";
-      }
-      else {
+      } else {
         this.deviceType = "desktop";
       }
       console.log(this.deviceType);
@@ -160,33 +169,32 @@ export default {
       this.DownloadLinks = data;
     },
     redirectToHome() {
-      this.tabs = "Home"
+      this.tabs = "Home";
       window.scrollTo(0, 0);
-      this.$router.push({ path: '/' });
+      this.$router.push({ path: "/" });
     },
     redirectToOrganizingCommitteePage() {
-      this.tabs = "Scientific Programme"
+      this.tabs = "Scientific Programme";
       window.scrollTo(0, 0);
-      this.$router.push({ path: '/Committee' });
+      this.$router.push({ path: "/Committee" });
     },
     redirectToInternationalFaculty() {
-      this.tabs = "International Faculty"
+      this.tabs = "International Faculty";
       window.scrollTo(0, 0);
-      this.$router.push({ path: '/InternationalFaculty' });
+      this.$router.push({ path: "/InternationalFaculty" });
     },
     redirectToNationalFaculty() {
-      this.tabs = "National Faculty"
+      this.tabs = "National Faculty";
       window.scrollTo(0, 0);
-      this.$router.push({ path: '/NationalFaculty' });
+      this.$router.push({ path: "/NationalFaculty" });
     },
     redirectToOrganizingOutlinePage() {
-      this.tabs = "Organizing Committee"
+      this.tabs = "Organizing Committee";
       window.scrollTo(0, 0);
-      this.$router.push({ path: '/Outline' });
+      this.$router.push({ path: "/Outline" });
     },
   },
 };
-
 </script>
 <style>
 @import "./styles/styleVariables.css";
