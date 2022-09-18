@@ -196,4 +196,10 @@ th {
     font-size: large !important;
   }
 }
+@media only screen and (max-width: 569px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

@@ -19,6 +19,10 @@
       6. Dr. Ajith Venniyoor MD, DM<br />
       7. Dr. Kurian Joseph FRCR, FRCP
     </h4>
+    <h5 class="center text-color-class">
+      Meet the expert sessions will be conducted in designated locations at the conference
+      centre. Those who are interested may contact the secretariat : +917736232123
+    </h5>
     <v-card class="mx-auto">
       <h2 class="center">Hall A/Hall B/Hall C</h2>
       <v-timeline align-top dense>
@@ -52,7 +56,11 @@
         </v-timeline-item>
       </v-timeline>
     </v-card>
-    <h3>Gala Dinner 7:00PM Onwards</h3>
+    <!-- <h3>Gala Dinner 7:00PM Onwards</h3> -->
+    <br />
+    <h3>Musical Evening - 7:00PM - Hall A</h3>
+    <h4 class="text-color-class">By Playback singers Afsal, Akhila Anand and Party</h4>
+    <h4 class="text-color-class">And Dinner</h4>
   </div>
 </template>
 <script>
@@ -110,6 +118,10 @@ export default {
           Description: "Transform the Journey for your HER2+ve Breast cancer patients",
           Speaker: "TBC",
         },
+        // {
+        //   Description: "Transform the Journey for your HER2+ve Breast cancer patients",
+        //   Speaker: "TBC",
+        // },
         {
           Description:
             "Managing CNS tumours in Children and Young Adults - Challenges and the way forward ",
@@ -144,9 +156,13 @@ export default {
           Speaker: "Dr. Anita Ramesh MD, DM ",
         },
         {
-          Description: "Improving outcomes in Cervical cancer ",
+          Description: "Current concepts in the management of type 1 Endometrial cancer",
           Speaker: "Dr. Umesh Mahant Shetty MD",
         },
+        // {
+        //   Description: "Improving outcomes in Cervical cancer ",
+        //   Speaker: "Dr. Umesh Mahant Shetty MD",
+        // },
         {
           Description: "MIBC: Preservation of Bladder Cancer - Panel discussion",
           Speaker: "",

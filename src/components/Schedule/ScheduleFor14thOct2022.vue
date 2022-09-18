@@ -17,7 +17,20 @@
         </v-timeline-item>
       </v-timeline>
     </v-card>
-    <h3>Inaugural Ceremony, Cultural Events and Dinner</h3>
+    <!-- <h3>Inaugural Ceremony, Cultural Events and Dinner</h3> -->
+    <br />
+    <div class="text-color-class">
+      <h2 class="center">Inaugural Function - Hall A</h2>
+      <h3>Inaugration by Prof. Dr. Mohan Kunnummel,</h3>
+      <h3>the Vice Chancellor of Kerala University of Health Sciences.</h3>
+      <h3>
+        The legendary teacher and administrator Prof. P. G. R. Pillai will be honoured for
+        his contributions to cancer care and medical education during the function....by
+        Prof Dr M. V. Pillai
+      </h3>
+      <h3>8 PM - Cultural Evening : Laasya School of Dance, Kochi</h3>
+      <h3>Followed by dinner</h3>
+    </div>
   </div>
 </template>
 <script>
@@ -46,9 +59,14 @@ export default {
           Speaker: "Dr. Kurian Joseph FRCR,FRCP",
         },
         {
-          Description: "2022 ASCO updates in Lung Cancer",
-          Speaker: "Dr. Khaleel Ashraf MD,FACP",
+          Description:
+            "Updates in the management of metastatic prostate cancer (CSPC and CRPC)",
+          Speaker: "Dr. Saby George MD, FACP",
         },
+        // {
+        //   Description: "2022 ASCO updates in Lung Cancer",
+        //   Speaker: "Dr. Khaleel Ashraf MD,FACP",
+        // },
         {
           Description: "NACT on Oral Cavity Cancer - Does it benefit Indian patients",
           Speaker: "Dr. Kumar Prabhash MD,DM",
@@ -57,6 +75,18 @@ export default {
           Description: "Recent advances in the management of type 1 Endometrial cancer",
           Speaker: "Dr. Umesh Mahant Shetty MD",
         },
+        {
+          Description: "Type II Endometrial Cancer — Current trends ",
+          Speaker: "Prof. Dr.Shashikant B. Lele MD, FACOG",
+        },
+        {
+          Description: "Improving outcomes in Cervical cancer ",
+          Speaker: "Dr. Umesh Mahant Shetty MD",
+        },
+        // {
+        //   Description: "Current concepts in the management of type 1 Endometrial cancer",
+        //   Speaker: "Dr. Umesh Mahant Shetty MD",
+        // },
         {
           Description:
             "Maximizing outcomes in Pre-Menopausal Patients with HR+/HER2- Metastatic Breast Cancer",
@@ -198,11 +228,14 @@ export default {
 
 .light-background {
   background-color: var(--Tab-color);
+  padding: 10px;
 }
 
 .dark-background {
-  background-color: var(--text-color2);
+  background-color: var(--dark-color);
+  // background-color: var(--text-color2);
   color: var(--background-color);
+  padding: 10px;
 }
 .text-color-class {
   color: var(--text-color);

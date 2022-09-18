@@ -74,7 +74,8 @@ export default {
           Speaker: " Dr.Rahul Krishnatry MD",
         },
         {
-          Description: "Pancreatic cancer management of localized disease",
+          Description:
+            "Pancreatic cancer management of localized disease. Current approach to management of Multiple Myeloma",
           Speaker: " Dr. Patrick Boland MD, FACP",
         },
         {
@@ -83,14 +84,19 @@ export default {
           Speaker: "Dr. Najeeb Mohideen MD, FRCP, FACR, FASTRO",
         },
         {
-          Description: "Newer directions in the curative treatment of Multiple Myeloma",
-          Speaker: "Dr.Khaleel Ashraf MD, FACP",
-        },
-        {
           Description:
-            "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
-          Speaker: "Dr.Aju Mathew MD, FACP, AB",
+            "Translating the biology of Diffuse Large B Cell Lymphoma into treatment",
+          Speaker: "Prof.Dr. Hari Menon MD, DM",
         },
+        // {
+        //   Description: "Newer directions in the curative treatment of Multiple Myeloma",
+        //   Speaker: "Dr.Khaleel Ashraf MD, FACP",
+        // },
+        // {
+        //   Description:
+        //     "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
+        //   Speaker: "Dr.Aju Mathew MD, FACP, AB",
+        // },
         {
           Description: "Management of advanced Urothelial cancer",
           Speaker: " Dr. Saby George MD, FACP",
@@ -99,6 +105,10 @@ export default {
           Description:
             "Neo adjuvant chemo - immunotherapy in solid tumors - Is it going to produce a paradigm shift",
           Speaker: "Dr.Govind Babu MD, DM",
+        },
+        {
+          Description: "Risk adopted strategies for managing Myeloma ",
+          Speaker: "Dr. Shaji Kumar MD",
         },
         {
           Description: "Therapeutic Dilemmas in newly diagnosed Hodgkin’s Lymphoma",
@@ -129,8 +139,8 @@ export default {
         },
         {
           Description:
-            "Translating the biology of Diffuse Large B Cell Lymphoma into treatment",
-          Speaker: " Prof.Dr. Hari Menon MD, DM",
+            "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
+          Speaker: "Dr.Aju Mathew MD, FACP, AB",
         },
         {
           Description:
