@@ -34,6 +34,7 @@
 }
 .announcement {
   background-color: var(--primary-color);
+  border-bottom: 5px solid var(--Tab-color);
 }
 .image-container {
   height: fit-content;

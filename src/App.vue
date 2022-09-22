@@ -85,6 +85,10 @@ export default {
         linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
       },
       {
+        linkName: `Scientific Programme`,
+        linkSrc: "/Outline",
+      },
+      {
         linkName: "Brochure (PDF)",
         linkSrc: "http://www.oncology2022.in/brochure-2022-1.pdf",
       },

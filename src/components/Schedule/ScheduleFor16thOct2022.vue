@@ -5,17 +5,17 @@
   </div> -->
   <div>
     <h1>16th October 2022 (Day 3)</h1>
-    <h2 class="center text-color-class">Meet the expert session in Oman Hall</h2>
-    <h4>
-      1. Dr. Shashikant Lele MD, FACOG,<br />
-      2. Prof. Dr. Saby George MD,FACP <br />
-      3. Dr. Patrick Boland MD
+    <h2 class="center text-color-class left">Meet the expert session in Oman Hall</h2>
+    <h4 class="text-color-class">
+      Dr. Shashikant Lele MD, FACOG,<br />
+      Prof. Dr. Saby George MD,FACP <br />
+      Dr. Patrick Boland MD
       <br />
-      4. Prof. Dr. M V Pillai, MD, FACP
+      Prof. Dr. M V Pillai, MD, FACP
       <br />
-      5. Dr. Ajith Venniyoor MD, DM
+      Dr. Ajith Venniyoor MD, DM
       <br />
-      6. Dr. Kurian Joseph FRCR, FRCP
+      Dr. Kurian Joseph FRCR, FRCP
     </h4>
     <v-card class="mx-auto">
       <h2 class="center">Hall A/Hall B/Hall C</h2>

@@ -6,8 +6,20 @@
   </div> -->
   <div>
     <h1>15th October 2022 (Day 2)</h1>
-    <h2 class="center text-color-class">Meet the expert session in Oman Hall</h2>
-    <h4>
+    <h2 class="center text-color-class left">Meet the expert session in Oman Hall</h2>
+    <h4 class="text-color-class">
+      Dr. Shashikant Lele MD, FACOG,<br />
+      Dr. M V Pillai, MD, FACP <br />
+      Dr. Patrick Boland MD
+      <br />
+      Dr. Nisar M Syed MD, FACRO, FRCS
+      <br />
+      Dr. T Ajithkumar MD, MRCP, FRCR
+      <br />
+      Dr. Ajith Venniyoor MD, DM<br />
+      Dr. Kurian Joseph FRCR, FRCP
+    </h4>
+    <!-- <h4>
       1. Dr. Shashikant Lele MD, FACOG,<br />
       2. Dr. M V Pillai, MD, FACP <br />
       3. Dr. Patrick Boland MD
@@ -18,7 +30,7 @@
       <br />
       6. Dr. Ajith Venniyoor MD, DM<br />
       7. Dr. Kurian Joseph FRCR, FRCP
-    </h4>
+    </h4> -->
     <h5 class="center text-color-class">
       Meet the expert sessions will be conducted in designated locations at the conference
       centre. Those who are interested may contact the secretariat : +917736232123
@@ -58,9 +70,12 @@
     </v-card>
     <!-- <h3>Gala Dinner 7:00PM Onwards</h3> -->
     <br />
-    <h3>Musical Evening - 7:00PM - Hall A</h3>
-    <h4 class="text-color-class">By Playback singers Afsal, Akhila Anand and Party</h4>
-    <h4 class="text-color-class">And Dinner</h4>
+    <h3 class="text2-color-class">Musical Evening - 7:00PM - Hall A</h3>
+    <h4 class="text2-color-class">
+      By Playback singers <span class="text2-color-class">Afsal, Akhila Anand</span> and
+      Party
+    </h4>
+    <h4 class="text2-color-class">And Dinner</h4>
   </div>
 </template>
 <script>
@@ -283,6 +298,9 @@ export default {
 }
 .text-color-class {
   color: var(--text-color);
+}
+.text2-color-class {
+  color: var(--link-color);
 }
 
 td,

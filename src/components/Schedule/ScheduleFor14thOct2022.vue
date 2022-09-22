@@ -6,7 +6,7 @@
   </div> -->
   <div>
     <h1>14th October 2022 (Day 1) - Hall A (Oman Hall)</h1>
-    <h2 class="right text-color-class">Registration - 7:30 AM Onwards</h2>
+    <h2 class="left text-color-class">Registration - 7:30 AM Onwards</h2>
     <v-card class="mx-auto">
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleList" :key="schedule" small>
@@ -19,17 +19,21 @@
     </v-card>
     <!-- <h3>Inaugural Ceremony, Cultural Events and Dinner</h3> -->
     <br />
-    <div class="text-color-class">
-      <h2 class="center">Inaugural Function - Hall A</h2>
-      <h3>Inaugration by Prof. Dr. Mohan Kunnummel,</h3>
-      <h3>the Vice Chancellor of Kerala University of Health Sciences.</h3>
-      <h3>
+    <div class="text2-color-class">
+      <h2 class="center text2-color-class">Inaugural Function - Hall A</h2>
+      <h3 class="text2-color-class">Inaugration by Prof. Dr. Mohan Kunnummel,</h3>
+      <h3 class="text2-color-class">
+        the Vice Chancellor of Kerala University of Health Sciences.
+      </h3>
+      <h3 class="text2-color-class">
         The legendary teacher and administrator Prof. P. G. R. Pillai will be honoured for
         his contributions to cancer care and medical education during the function....by
         Prof Dr M. V. Pillai
       </h3>
-      <h3>8 PM - Cultural Evening : Laasya School of Dance, Kochi</h3>
-      <h3>Followed by dinner</h3>
+      <h3 class="text2-color-class">
+        8 PM - Cultural Evening : Laasya School of Dance, Kochi
+      </h3>
+      <h3 class="text2-color-class">Followed by dinner</h3>
     </div>
   </div>
 </template>
@@ -239,6 +243,9 @@ export default {
 }
 .text-color-class {
   color: var(--text-color);
+}
+.text2-color-class {
+  color: var(--link-color) !important;
 }
 
 td,

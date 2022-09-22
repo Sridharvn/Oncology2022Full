@@ -52,6 +52,7 @@
     <v-spacer></v-spacer>
     <h1 class="center">Basic Course on Molecular Oncology and Precision Medicine</h1>
     <h3 class="center">Hall - B - IMA Hall, Kochi</h3>
+    <br />
     <h2 class="left">Faculty :</h2>
     <div class="grid-container">
       <h4 v-for="faculty in facultyList" :key="faculty">
