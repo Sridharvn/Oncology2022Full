@@ -61,8 +61,9 @@
     </v-main>
     <PaymentQR v-if="this.$route.name != 'Home'"></PaymentQR>
     <website-footer :DownloadLinks="DownloadsLinks"></website-footer>
-    <!-- <br>
-    <div id="footer">Cybernet Developers</div> -->
+    <div id="footer">
+      <a href="http://www.cybernetdevelopers.com" target="_blank">CyberNet Developers</a>
+    </div>
   </v-app>
 </template>
 
@@ -236,12 +237,15 @@ p {
   background: var(--primary-color);
   padding: 10px;
 }
-
+#footer a {
+  text-decoration: none !important;
+  color: var(--primary-color);
+}
 #footer {
   background-color: var(--dark-color);
   color: var(--primary-color);
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }

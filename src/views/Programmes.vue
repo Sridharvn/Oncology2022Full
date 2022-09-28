@@ -17,6 +17,7 @@
 
     <v-tabs-items v-model="tab">
       <v-tab-item v-for="item in items" :key="item">
+        <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <!-- <v-card color="var(--primary-color)" flat> -->
         <!-- <v-card-text>{{ text }}</v-card-text> -->
         <ScheduleFor13thOct2022 v-if="tab == 0"></ScheduleFor13thOct2022>
@@ -53,7 +54,14 @@ import ScheduleFor14thOct2022 from "../components/Schedule/ScheduleFor14thOct202
 import ScheduleFor15thOct2022 from "../components/Schedule/ScheduleFor15thOct2022.vue";
 import ScheduleFor16thOct2022 from "../components/Schedule/ScheduleFor16thOct2022.vue";
 import BusAnnouncement from "../components/BusAnnouncement.vue";
+import HomeMain from "../components/HomeMain.vue";
 export default {
+  props: {
+    deviceType: {
+      type: String,
+      default: "desktop",
+    },
+  },
   data() {
     return {
       tab: null,
@@ -74,6 +82,7 @@ export default {
     ScheduleFor15thOct2022,
     ScheduleFor16thOct2022,
     BusAnnouncement,
+    HomeMain,
   },
 };
 </script>
