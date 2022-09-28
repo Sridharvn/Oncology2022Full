@@ -30,7 +30,7 @@
       </v-img
       ><br />
       <v-img
-        src="./../assets/varianLogo-removebg-preview.png"
+        src="./../assets/VarianLogo.png"
         contain
         max-height="100px"
         max-width="100px"
