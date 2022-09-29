@@ -29,14 +29,15 @@
       >
       </v-img
       ><br />
-      <v-img
-        src="./../assets/VarianLogo.png"
-        contain
-        max-height="100px"
-        max-width="100px"
-        id="ccrsLogo"
-      >
-      </v-img
+      <a href="https://www.varian.com/" target="_blank">
+        <v-img
+          src="./../assets/VarianLogo.png"
+          contain
+          max-height="200px"
+          max-width="200px"
+          id="ccrsLogo"
+        >
+        </v-img></a
       ><br />
       <h5>Cancer is conquerable | Knowledge conquers cancer</h5>
       <br />
