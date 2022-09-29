@@ -18,34 +18,40 @@
       Dr. Kurian Joseph FRCR, FRCP
     </h4>
     <v-card class="mx-auto">
-      <h2 class="center">Hall A/Hall B/Hall C</h2>
+      <h2 class="center">16th October 2022 (Day 3) - Hall A</h2>
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleListHallA" :key="schedule" small>
+          <div class="time">{{ schedule.time }}</div>
+          <br /><br />
           {{ schedule.Description }}
-          <br />
-          {{ schedule.Speaker }}
+          <br /><br />
+          <div class="speaker">{{ schedule.Speaker }}</div>
           <hr />
         </v-timeline-item>
       </v-timeline>
     </v-card>
     <v-card class="mx-auto">
-      <h2 class="center">Hall B</h2>
+      <h2 class="center">16th October 2022 (Day 3) - Hall B</h2>
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleListHallB" :key="schedule" small>
+          <div class="time">{{ schedule.time }}</div>
+          <br /><br />
           {{ schedule.Description }}
-          <br />
-          {{ schedule.Speaker }}
+          <br /><br />
+          <div class="speaker">{{ schedule.Speaker }}</div>
           <hr />
         </v-timeline-item>
       </v-timeline>
     </v-card>
     <v-card class="mx-auto">
-      <h2 class="center">Hall C</h2>
+      <h2 class="center">16th October 2022 (Day 3) - Hall C</h2>
       <v-timeline align-top dense>
         <v-timeline-item v-for="schedule in scheduleListHallC" :key="schedule" small>
+          <div class="time">{{ schedule.time }}</div>
+          <br /><br />
           {{ schedule.Description }}
-          <br />
-          {{ schedule.Speaker }}
+          <br /><br />
+          <div class="speaker">{{ schedule.Speaker }}</div>
           <hr />
         </v-timeline-item>
       </v-timeline>
@@ -66,141 +72,125 @@ export default {
     return {
       scheduleListHallA: [
         {
-          Description: "2022 updates in Rectal cancer",
-          Speaker: " Dr. Kurian Joseph FRCR, FRCP",
+          time: "8:00-8:20",
+          Description: "Update in the management of TNBC",
+          Speaker: "Dr.Tracy O Connor MD",
         },
         {
-          Description: "Radical Radiotherapy for Ca gall bladder",
-          Speaker: " Dr.Rahul Krishnatry MD",
+          time: "8:25-8:45",
+          Description: "NSCLC- KRAS & other emerging targets",
+          Speaker: "Dr.Grace Dy MD,FACP",
         },
         {
+          time: "8:55-9:35",
           Description:
-            "Pancreatic cancer management of localized disease. Current approach to management of Multiple Myeloma",
-          Speaker: " Dr. Patrick Boland MD, FACP",
-        },
-        {
-          Description:
-            "Management of intermediate risk Prostate Cancer - What is the way forward? (Panel Discussion)",
+            "Advances in the management of cancer of prostate oligo metastasis",
           Speaker: "Dr. Najeeb Mohideen MD, FRCP, FACR, FASTRO",
         },
         {
+          time: "9:40-10:10",
+          Description: "2022 updates in Rectal cancer",
+          Speaker: "Dr. Kurian Joseph FRCR,FRCP",
+        },
+        {
+          time: "10:15-10:35",
+          Description: "Radical Radiotherapy for Ca gall bladder",
+          Speaker: "Dr.Rahul Krishnatry MD",
+        },
+        {
+          time: "10:40-11:00",
+          Description: "Pancreatic cancer management of localized disease",
+          Speaker: "Dr. Patrick Boland MD,FACP",
+        },
+        {
+          time: "11:05-12:30",
+          Description: "Management of advanced Urothelial cancer",
+          Speaker: "Dr. Saby George MD,FACP",
+        },
+        {
+          time: "12:35-13:00",
+          Description:
+            "Neo adjuvant chemo - immunotherapy in solid tumors - Is it going to produce a paradigm shift",
+          Speaker: "Dr.Govind Babu MD,DM",
+        },
+        {
+          time: "13:00-14:00",
+          Description: "Lunch Break",
+          Speaker: "",
+        },
+        {
+          time: "14:05-14:35",
+          Description: "Therapeutic Dilemmas in newly diagnosed Hodgkin's Lymphoma",
+          Speaker: "Dr.Neeraj Sidharthan MD,DM",
+        },
+        {
+          time: "14:40-15:00",
+          Description:
+            "Systemic Therapy for Gastric cancer; Current concepts and emerging options",
+          Speaker: "Dr. Patrick Boland MD,FACP",
+        },
+        {
+          time: "15:05-15:25",
+          Description: "Risk adapted strategies for managing myeloma",
+          Speaker: "Dr. Shaji Kumar MD, FACP",
+        },
+        {
+          time: "15:30-15:50",
           Description:
             "Translating the biology of Diffuse Large B Cell Lymphoma into treatment",
           Speaker: "Prof.Dr. Hari Menon MD, DM",
         },
-        // {
-        //   Description: "Newer directions in the curative treatment of Multiple Myeloma",
-        //   Speaker: "Dr.Khaleel Ashraf MD, FACP",
-        // },
-        // {
-        //   Description:
-        //     "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
-        //   Speaker: "Dr.Aju Mathew MD, FACP, AB",
-        // },
         {
-          Description: "Management of advanced Urothelial cancer",
-          Speaker: " Dr. Saby George MD, FACP",
-        },
-        {
-          Description:
-            "Neo adjuvant chemo - immunotherapy in solid tumors - Is it going to produce a paradigm shift",
-          Speaker: "Dr.Govind Babu MD, DM",
-        },
-        {
-          Description: "Risk adopted strategies for managing Myeloma ",
-          Speaker: "Dr. Shaji Kumar MD",
-        },
-        {
-          Description: "Therapeutic Dilemmas in newly diagnosed Hodgkin’s Lymphoma",
-          Speaker: " Dr.Neeraj Sidharthan MD, DM",
-        },
-        {
-          Description:
-            "Systemic Therapy for Gastric cancer; Current concepts and emerging options ",
-          Speaker: "Dr. Patrick Boland MD, FACP",
-        },
-        {
-          Description:
-            "Management of Her2 over expressing metastatic Breast cancer - What is new?",
-          Speaker: " Dr.Sudeep Gupta MD, DM",
-        },
-        {
-          Description: "Update in the management of TNBC",
-          Speaker: " Dr.Tracy O Connor MD",
-        },
-        {
-          Description: "Small cell lung cancer: Management of extensive stage disease ",
-          Speaker: "Dr.Grace Dy MD, FACP",
-        },
-        {
-          Description:
-            "Choosing between adjuvant and salvage Radiation treatment after Radical Prostatectomy",
-          Speaker: "Dr. Najeeb Mohideen MD,FRCP,FACR, FASTRO",
-        },
-        {
-          Description:
-            "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
-          Speaker: "Dr.Aju Mathew MD, FACP, AB",
-        },
-        {
+          time: "15:55-16:15",
           Description:
             "Role of histology driven therapy and tumour agnostic therapy in advanced Soft Tissue Sarcomas",
-          Speaker: " Dr. Krupa Shankar MD, DM",
+          Speaker: "Dr. Krupa Shankar MD, DM",
         },
         {
-          Description: "NSCLC- KRAS & other emerging targets ",
-          Speaker: "Dr.Grace Dy MD, FACP",
+          time: "16:20-16:40",
+          Description:
+            "Placing PARP-Inhibitors in the therapeutic strategy for the treatment of Breast cancer today",
+          Speaker: "Dr. Aju Mathew MD, FACP, AB",
         },
       ],
       scheduleListHallB: [
+        { time: "8:00-10:30", Description: "Free paper session", Speaker: "" },
+        { time: "10:30-13:00", Description: "Poster presentation", Speaker: "" },
         {
-          Description: "Free paper session",
+          time: "16:45",
+          Description: "Fellowship discussions and interview",
           Speaker: "",
         },
         {
-          Description: "Poster presentation",
-          Speaker: "",
-        },
-        {
-          Description: "Quiz competition for PG Medical Oncologist",
-          Speaker: "",
-        },
-        {
-          Description: "Quiz competition for PG Radiation Oncologist",
-          Speaker: "",
-        },
-        {
+          time: "16:45",
           Description: "Announcement of Results and Distribution of prizes",
+          Speaker: "",
+        },
+        {
+          time: "16:45",
+          Description: "Valedictory function",
+          Speaker: "",
+        },
+        {
+          time: "16:45",
+          Description: "National Anthem",
           Speaker: "",
         },
       ],
       scheduleListHallC: [
         {
-          Description: "E contouring session",
+          time: "8:00-10:30",
+          Description: "Quiz competition- Medical Oncology (PG Students)",
           Speaker: "",
         },
         {
-          Description: "Co ordinator : ",
-          Speaker: "Dr Jose Paul MD, FRCR",
-        },
-        {
-          Description: "Faculty :",
-          Speaker: "Dr Sreenivas Chilukuri MD",
-        },
-        {
-          Description: "Dr Kurian Joseph FRCR FRCP",
+          time: "10:30-13:00",
+          Description: "Quiz competition- Radiation Oncology (PG Students)",
           Speaker: "",
         },
         {
-          Description: "Dr Umesh Mahant Shetty MD",
-          Speaker: "",
-        },
-        {
-          Description: "Dr K C Patro MD, DNB, MBA",
-          Speaker: "",
-        },
-        {
-          Description: "Dr Ajithkumar MD, FRCR, MRCP",
+          time: "13:00-14:00",
+          Description: "Quiz competition- Surgical Oncology (PG Students)",
           Speaker: "",
         },
       ],
@@ -268,6 +258,12 @@ th {
 #sessions {
   text-align: left !important;
   margin-left: 10px;
+}
+.time {
+  color: var(--link-color);
+}
+.speaker {
+  color: var(--TabSlider-color);
 }
 @media only screen and (max-width: 893px) {
   h1 {
