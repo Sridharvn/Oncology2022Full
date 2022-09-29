@@ -48,7 +48,7 @@
       </v-col>
     </v-row>
     <ScheduleTable></ScheduleTable>
-
+    <VarianPage></VarianPage>
     <br />
     <br />
   </div>
@@ -63,6 +63,7 @@ import Table from "../components/Table.vue";
 import HotelsDetails from "../components/HotelsDetails.vue";
 import PaymentQR from "../components/PaymentQR.vue";
 import ScheduleTable from "../components/Schedule/ScheduleTable.vue";
+import VarianPage from "../components/VarianPage.vue";
 
 export default {
   name: "Home",
@@ -75,6 +76,7 @@ export default {
     HotelsDetails,
     PaymentQR,
     ScheduleTable,
+    VarianPage,
   },
   mounted() {
     //
