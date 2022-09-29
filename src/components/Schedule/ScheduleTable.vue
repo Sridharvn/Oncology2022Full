@@ -1,5 +1,6 @@
 <template>
   <div class="body">
+    <h1>Schedule</h1>
     <v-img src="./../../assets/schedule/Schedule-Table.png" class="image" contain></v-img>
   </div>
 </template>
@@ -8,8 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .image {
+  margin-top: 10px;
   max-height: 650px;
   max-width: 650px;
 }

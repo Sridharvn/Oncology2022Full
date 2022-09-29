@@ -47,6 +47,8 @@
         <Table :TableData="PlacesinKochiData" :Headers="PlacesinKochiHeaders"></Table>
       </v-col>
     </v-row>
+    <ScheduleTable></ScheduleTable>
+
     <br />
     <br />
   </div>
@@ -60,6 +62,7 @@ import DetailsText from "../components/DetailsText.vue";
 import Table from "../components/Table.vue";
 import HotelsDetails from "../components/HotelsDetails.vue";
 import PaymentQR from "../components/PaymentQR.vue";
+import ScheduleTable from "../components/Schedule/ScheduleTable.vue";
 
 export default {
   name: "Home",
@@ -71,6 +74,7 @@ export default {
     Table,
     HotelsDetails,
     PaymentQR,
+    ScheduleTable,
   },
   mounted() {
     //

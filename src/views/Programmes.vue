@@ -20,6 +20,7 @@
         <HomeMain v-if="deviceType != 'mobile'"></HomeMain>
         <!-- <v-card color="var(--primary-color)" flat> -->
         <!-- <v-card-text>{{ text }}</v-card-text> -->
+        <!-- <ScheduleTable></ScheduleTable> -->
         <ScheduleFor13thOct2022 v-if="tab == 0"></ScheduleFor13thOct2022>
         <ScheduleFor14thOct2022 v-if="tab == 1"></ScheduleFor14thOct2022>
         <ScheduleFor15thOct2022 v-if="tab == 2"></ScheduleFor15thOct2022>
@@ -27,7 +28,6 @@
         <!-- </v-card> -->
       </v-tab-item>
     </v-tabs-items>
-    <ScheduleTable></ScheduleTable>
     <BusAnnouncement></BusAnnouncement>
     <v-tabs
       v-model="tab"
@@ -56,7 +56,7 @@ import ScheduleFor15thOct2022 from "../components/Schedule/ScheduleFor15thOct202
 import ScheduleFor16thOct2022 from "../components/Schedule/ScheduleFor16thOct2022.vue";
 import BusAnnouncement from "../components/BusAnnouncement.vue";
 import HomeMain from "../components/HomeMain.vue";
-import ScheduleTable from "../components/Schedule/ScheduleTable.vue";
+// import ScheduleTable from "../components/Schedule/ScheduleTable.vue";
 export default {
   props: {
     deviceType: {
@@ -85,7 +85,7 @@ export default {
     ScheduleFor16thOct2022,
     BusAnnouncement,
     HomeMain,
-    ScheduleTable,
+    // ScheduleTable,
   },
 };
 </script>
