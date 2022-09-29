@@ -27,6 +27,7 @@
         <!-- </v-card> -->
       </v-tab-item>
     </v-tabs-items>
+    <ScheduleTable></ScheduleTable>
     <BusAnnouncement></BusAnnouncement>
     <v-tabs
       v-model="tab"
@@ -55,6 +56,7 @@ import ScheduleFor15thOct2022 from "../components/Schedule/ScheduleFor15thOct202
 import ScheduleFor16thOct2022 from "../components/Schedule/ScheduleFor16thOct2022.vue";
 import BusAnnouncement from "../components/BusAnnouncement.vue";
 import HomeMain from "../components/HomeMain.vue";
+import ScheduleTable from "../components/Schedule/ScheduleTable.vue";
 export default {
   props: {
     deviceType: {
@@ -83,6 +85,7 @@ export default {
     ScheduleFor16thOct2022,
     BusAnnouncement,
     HomeMain,
+    ScheduleTable,
   },
 };
 </script>
