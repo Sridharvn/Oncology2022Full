@@ -1,10 +1,10 @@
 <template>
   <div class="body">
-    <h2>Varian</h2>
+    <!-- <h2>Varian</h2> -->
     <v-img src="./../assets/VarianPage.png" class="image" contain></v-img>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .body {
   display: flex;
   justify-content: center;
