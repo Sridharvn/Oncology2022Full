@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 30px;
 }
 .image {
   margin-top: 10px;

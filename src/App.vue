@@ -203,6 +203,7 @@ export default {
 </script>
 <style>
 @import "./styles/styleVariables.css";
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 #appbar {
   background-color: var(--appBar-color);
@@ -210,7 +211,8 @@ export default {
 }
 
 * {
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Verdana, sans-serif; */
+  font-family: "Poppins";
   padding: 0;
   margin: 0;
   /* box-sizing:border-box; */

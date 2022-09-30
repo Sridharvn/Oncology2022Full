@@ -40,6 +40,9 @@
         </v-timeline-item>
       </v-timeline>
     </v-card>
+    <v-card class="mx-auto others" v-for="item in Others" :key="item">
+      {{ item }}
+    </v-card>
     <!-- <h3>Inaugural Ceremony, Cultural Events and Dinner</h3> -->
     <br />
     <div class="text2-color-class">
@@ -302,7 +305,7 @@ Panelists:-
 Course on Radiology of Oncology (8 hours) and target delineation would be of great value for all practicing Oncologists especially Radiation Oncologists and Physicists, who are involved in the care of cancer patients. As we all know Dr. Kanhu Charan Pathro is the most hardworking Radiation Oncologist in the country and he is bent on teaching students and oncologists the intricacies in radiological anatomy and target volume delineation. May we request all to participate in this highly interactive course to become more confident in improving therapeutic ratio.
 
 The modules of one day refresher course in Radiology of Oncology for Oncologists and Oncology Residents is as follows
-Salient features
+Salient features :
     1. Basics
     2. Identification
     3. CT-MRI correlation
@@ -319,11 +322,9 @@ TOTAL DURATION OF THE COURSE- 8 HOURS
 ”.`,
           Speaker: "Dr. K.C Pathro MD,DNB,MBA",
         },
-        {
-          time: "",
-          Description: `Prof. Manoj Gupta MD, DNB, who is shortly becoming the next President of AROI is well known to all of us. He will be doing the course over 8 hours and it will be very valuable for Radiation Oncology Residents, Physicists and Radiation Oncologists to master the tough subject “Clinical Radiobiology`,
-          Speaker: "",
-        },
+      ],
+      Others: [
+        `Prof. Manoj Gupta MD, DNB, who is shortly becoming the next President of AROI is well known to all of us. He will be doing the course over 8 hours and it will be very valuable for Radiation Oncology Residents, Physicists and Radiation Oncologists to master the tough subject “Clinical Radiobiology`,
       ],
     };
   },
@@ -400,6 +401,12 @@ th {
 #sessions {
   text-align: left !important;
   margin-left: 10px;
+}
+.others {
+  background-color: var(--BackgroundColor2-color);
+  padding: 20px;
+  font-size: larger;
+  text-align: center;
 }
 @media only screen and (max-width: 893px) {
   h1 {
