@@ -31,10 +31,10 @@
       ><br />
       <a href="https://www.varian.com/" target="_blank">
         <v-img
-          src="./../assets/VarianLogo.png"
+          src="./../assets/VarianLogo2.png"
           contain
-          max-height="200px"
-          max-width="200px"
+          max-height="250px"
+          max-width="250px"
           id="ccrsLogo"
         >
         </v-img></a
@@ -48,7 +48,6 @@
         alt=""
         style="max-height: 90vh; max-width: 55vw"
       />
-      <!-- <img src="./../assets/pexels-mart-production-7089017.jpg" alt="" style="height:90vh;width:100vh; "> -->
     </aside>
   </div>
 </template>

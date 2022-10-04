@@ -48,7 +48,7 @@
       </v-col>
     </v-row>
     <ScheduleTable></ScheduleTable>
-    <VarianPage></VarianPage>
+    <a href="https://www.varian.com/" target="_blank"><VarianPage></VarianPage></a>
     <br />
     <br />
   </div>
