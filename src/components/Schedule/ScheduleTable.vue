@@ -1,7 +1,11 @@
 <template>
   <div class="body">
     <!-- <h1>Schedule</h1> -->
-    <v-img src="./../../assets/schedule/Schedule-Table.png" class="image" contain></v-img>
+    <v-img
+      src="./../../assets/schedule/Schedule-Table2.png"
+      class="image"
+      contain
+    ></v-img>
   </div>
 </template>
 <style lang="scss">

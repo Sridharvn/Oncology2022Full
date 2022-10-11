@@ -56,9 +56,9 @@
         his contributions to cancer care and medical education during the function....by
         Prof Dr M. V. Pillai
       </h3>
-      <h3 class="text2-color-class">
+      <!-- <h3 class="text2-color-class">
         8 PM - Cultural Evening : Laasya School of Dance, Kochi
-      </h3>
+      </h3> -->
       <h3 class="text2-color-class">Followed by dinner</h3>
     </div>
   </div>

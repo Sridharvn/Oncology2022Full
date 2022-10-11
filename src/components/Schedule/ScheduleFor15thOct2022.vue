@@ -76,11 +76,11 @@
     </v-card>
     <!-- <h3>Gala Dinner 7:00PM Onwards</h3> -->
     <br />
-    <h3 class="text2-color-class">Musical Evening - 7:00PM - Hall A</h3>
+    <!-- <h3 class="text2-color-class">Musical Evening - 7:00PM - Hall A</h3>
     <h4 class="text2-color-class">
       By Playback singers <span class="text2-color-class">Afsal, Akhila Anand</span> and
       Party
-    </h4>
+    </h4> -->
     <h4 class="text2-color-class">And Dinner</h4>
   </div>
 </template>
