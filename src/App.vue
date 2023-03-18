@@ -38,6 +38,7 @@
           <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
             Organizing Committee
           </v-tab>
+          <v-tab @click="redirectToGallery()" id="Tabs"> Gallery </v-tab>
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
@@ -197,6 +198,11 @@ export default {
       this.tabs = "Organizing Committee";
       window.scrollTo(0, 0);
       this.$router.push({ path: "/Outline" });
+    },
+    redirectToGallery() {
+      this.tabs = "Gallery";
+      window.scrollTo(0, 0);
+      this.$router.push({ path: "/Gallery" });
     },
   },
 };
