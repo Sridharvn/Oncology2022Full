@@ -1,7 +1,7 @@
 module.exports = {
     transpileDependencies: ["vuetify"],
-    // publicPath: 'http://www.ccrsindia.in/oncology2022/'
-    publicPath: process.env.NODE_ENV === 'production' ? '/my-app/' : '/http://www.ccrsindia.in/oncology2022/'
+    publicPath: 'http://www.ccrsindia.in/oncology2022/'
+    // publicPath: process.env.NODE_ENV === 'production' ? '/my-app/' : '/http://www.ccrsindia.in/oncology2022/'
     // devServer: {
     //     proxy: "http://oncology2022.in",
     // },
