@@ -58,7 +58,7 @@ export default {
   },
 
   mounted() {
-    this.importAll(require.context("../../dist/img/Gallery", true, /\.png$/));
+    this.importAll(require.context("../assets/Gallery", true, /\.png$/));
   },
 
   methods: {
