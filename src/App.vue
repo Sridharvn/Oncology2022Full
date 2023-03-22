@@ -83,6 +83,10 @@ export default {
     tabs: null,
     DownloadsLinks: [
       {
+        linkName: `Gallery`,
+        linkSrc: "/Gallery",
+      },
+      {
         linkName: `Click To Register`,
         linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
       },
