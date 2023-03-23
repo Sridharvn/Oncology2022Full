@@ -10,46 +10,48 @@ import Gallery from '@/views/Gallery'
 
 Vue.use(VueRouter);
 
-const routes = [{
-    path: "/",
-    name: "Home",
-    component: Home,
-},
-{
-    path: "/Outline",
-    name: "Outline of Scientific Programme",
-    component: Programmes,
-},
-{
-    path: "/Gallery",
-    name: "Gallery",
-    component: Gallery,
-},
-{
-    path: "/Committee",
-    name: "Organizing Committee",
-    component: CommittePageVue,
-},
-{
-    path: "/InternationalFaculty",
-    name: "International Faculty",
-    component: InternationalFacultyVue,
-},
-{
-    path: "/NationalFaculty",
-    name: "National Faculty",
-    component: NationalFacultyVue,
-},
-{
-    path: "*",
-    name: "Home",
-    redirect: "/",
-},
-{
-    path: "/:catchAll(.*)",
-    component: Home,
-    name: "Home",
-},
+const routes = [
+
+    {
+        path: "/oncology2022/",
+        name: "Home",
+        component: Home,
+    },
+    {
+        path: "/oncology2022/Outline",
+        name: "Outline of Scientific Programme",
+        component: Programmes,
+    },
+    {
+        path: "/oncology2022/Gallery",
+        name: "Gallery",
+        component: Gallery,
+    },
+    {
+        path: "/oncology2022/Committee",
+        name: "Organizing Committee",
+        component: CommittePageVue,
+    },
+    {
+        path: "/oncology2022/InternationalFaculty",
+        name: "International Faculty",
+        component: InternationalFacultyVue,
+    },
+    {
+        path: "/oncology2022/NationalFaculty",
+        name: "National Faculty",
+        component: NationalFacultyVue,
+    },
+    {
+        path: "*",
+        name: "Home",
+        redirect: "/",
+    },
+    {
+        path: "/:catchAll(.*)",
+        component: Home,
+        name: "Home",
+    },
 ];
 
 const router = new VueRouter({

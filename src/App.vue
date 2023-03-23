@@ -75,6 +75,7 @@ import axios from "axios";
 import DropDown from "./components/DropDown.vue";
 import WebsiteFooter from "./components/WebsiteFooter.vue";
 export default {
+  watch: {},
   components: { DropDown, WebsiteFooter, PaymentQR },
   name: "App",
 
@@ -82,37 +83,37 @@ export default {
     //
     tabs: null,
     DownloadsLinks: [
-      {
-        linkName: `Gallery`,
-        linkSrc: "/Gallery",
-      },
-      {
-        linkName: `Click To Register`,
-        linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
-      },
+      // {
+      //   linkName: `Click To Register`,
+      //   linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
+      // },
       {
         linkName: `Scientific Programme`,
-        linkSrc: "/Outline",
+        linkSrc: "/oncology2022/Outline",
       },
       {
         linkName: "Brochure (PDF)",
-        linkSrc: "http://www.oncology2022.in/brochure-2022-1.pdf",
+        linkSrc: "http://www.ccrsindia.in/oncology2022/brochure-2022-1.pdf",
       },
       {
         linkName: "Registration Form (PDF)",
-        linkSrc: "http://www.oncology2022.in/Registration-Form.pdf",
+        linkSrc: "http://www.ccrsindia.in/oncology2022/Registration-Form.pdf",
       },
       {
         linkName: "Fellowship Application Form (PDF)",
-        linkSrc: "http://www.oncology2022.in/Fellowship-Application-Form.pdf",
+        linkSrc: "http://www.ccrsindia.in/oncology2022/Fellowship-Application-Form.pdf",
       },
       {
         linkName: "Abstract Submission Form (PDF)",
-        linkSrc: "http://www.oncology2022.in/Abstract-Submission-Form.pdf",
+        linkSrc: "http://www.ccrsindia.in/oncology2022/Abstract-Submission-Form.pdf",
       },
       {
         linkName: "Abstract Instructions (PDF)",
-        linkSrc: "http://www.oncology2022.in/Abstract-Instructions.pdf",
+        linkSrc: "http://www.ccrsindia.in/oncology2022/Abstract-Instructions.pdf",
+      },
+      {
+        linkName: `Gallery`,
+        linkSrc: "/oncology2022/Gallery",
       },
     ],
   }),
@@ -181,32 +182,32 @@ export default {
     redirectToHome() {
       this.tabs = "Home";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/oncology2022/" });
     },
     redirectToOrganizingCommitteePage() {
       this.tabs = "Scientific Programme";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/Committee" });
+      this.$router.push({ path: "/oncology2022/Committee" });
     },
     redirectToInternationalFaculty() {
       this.tabs = "International Faculty";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/InternationalFaculty" });
+      this.$router.push({ path: "/oncology2022/InternationalFaculty" });
     },
     redirectToNationalFaculty() {
       this.tabs = "National Faculty";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/NationalFaculty" });
+      this.$router.push({ path: "/oncology2022/NationalFaculty" });
     },
     redirectToOrganizingOutlinePage() {
       this.tabs = "Organizing Committee";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/Outline" });
+      this.$router.push({ path: "/oncology2022/Outline" });
     },
     redirectToGallery() {
       this.tabs = "Gallery";
       window.scrollTo(0, 0);
-      this.$router.push({ path: "/Gallery" });
+      this.$router.push({ path: "/oncology2022/Gallery" });
     },
   },
 };
