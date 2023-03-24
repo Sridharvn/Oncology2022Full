@@ -28,6 +28,7 @@
         >
           <v-tabs-slider color="var(--TabSlider-color)"></v-tabs-slider>
           <v-tab @click="redirectToHome()" id="Tabs"> Home </v-tab>
+          <v-tab @click="redirectToGallery()" id="Tabs"> Gallery </v-tab>
           <v-tab @click="redirectToOrganizingOutlinePage()" id="Tabs">
             Scientific Programme
           </v-tab>
@@ -38,7 +39,6 @@
           <v-tab @click="redirectToOrganizingCommitteePage()" id="Tabs">
             Organizing Committee
           </v-tab>
-          <v-tab @click="redirectToGallery()" id="Tabs"> Gallery </v-tab>
         </v-tabs>
       </template>
       <v-spacer></v-spacer>
@@ -87,10 +87,10 @@ export default {
       //   linkName: `Click To Register`,
       //   linkSrc: "https://forms.gle/Q2Bv2c55nJkSfjob9",
       // },
-      {
-        linkName: `Scientific Programme`,
-        linkSrc: "/oncology2022/Outline",
-      },
+      // {
+      //   linkName: `Scientific Programme`,
+      //   linkSrc: "/oncology2022/Outline",
+      // },
       {
         linkName: "Brochure (PDF)",
         linkSrc: "http://www.ccrsindia.in/oncology2022/brochure-2022-1.pdf",
@@ -111,10 +111,10 @@ export default {
         linkName: "Abstract Instructions (PDF)",
         linkSrc: "http://www.ccrsindia.in/oncology2022/Abstract-Instructions.pdf",
       },
-      {
-        linkName: `Gallery`,
-        linkSrc: "/oncology2022/Gallery",
-      },
+      // {
+      //   linkName: `Gallery`,
+      //   linkSrc: "/oncology2022/Gallery",
+      // },
     ],
   }),
   mounted() {
